@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 6.35 6.35">
+    <g stroke-width=".265">
+        <path fill="none"
+              stroke="#000"
+              d="M.132.132h6.085v6.085H.132z"/>
+        <text style="line-height:1.25"
+              x=".331"
+              y="301.739"
+              transform="matrix(1.02243 0 0 .97806 0 -290.65)"
+              font-weight="400"
+              font-size="3.528"
+              font-family="sans-serif"
+              letter-spacing="0"
+              word-spacing="0">
+            <tspan x=".331"
+                   y="301.739">ФП
+            </tspan>
+        </text>
+    </g>
+</svg>

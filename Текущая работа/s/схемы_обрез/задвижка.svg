@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="42"
+     height="24"
+    >
+
+  <title>Задвижка</title>
+
+  <rect width="100%"
+        height="100%"
+        fill="gray" />
+
+  <g transform="translate(0.0,0.0)"
+     oik:oikelement="1"
+          >
+    <desc>
+      var ts = initTmStatus(20, 1, 10, 'Задвижка');
+      var fillColor = getElementProperty('breaker', 'fill');
+
+      function update() {
+      if (isTmStatusUnreliable(ts)) {
+      setElementProperty('latch1', 'fill', 'white');
+      setElementProperty('latch2', 'fill', 'white');
+      setElementProperty('unreliable', 'display', 'block');
+         }
+      else if (isTmStatusIntermediate(ts)) {
+      setElementProperty('latch1', 'fill', 'yellow');
+      setElementProperty('latch2', 'fill', 'none');
+      setElementProperty('unreliable', 'display', 'none');
+      }
+      else if (isTmStatusOn(ts)) {
+      setElementProperty('latch1', 'fill', 'yellow');
+      setElementProperty('latch2', 'fill', 'yellow');
+      setElementProperty('unreliable', 'display', 'none');
+      }
+      else {
+      setElementProperty('latch1', 'fill', 'none');
+      setElementProperty('latch2', 'fill', 'nonee');
+      setElementProperty('unreliable', 'display', 'none');
+      }
+      }
+
+      return update;
+    </desc>
+
+
+
+     <polygon oik:oikid="latch1"
+              points="0,0 0,24 20.784, 12"
+             fill="none"
+          stroke="yellow"
+              stroke-width="1"
+         />
+    <polygon oik:oikid="latch2"
+             points="20.784,12 41.568,0 41.568 24"
+             fill="none"
+             stroke="yellow"
+             stroke-width="1"
+    />
+        <!-- вопрос -->
+    <text oik:oikid="unreliable"
+          x="17.8"
+          y="8"
+          font-size="10"
+          font-family="arial"
+          fill="yellow"
+          stroke="yellow">
+      ? </text>
+
+  </g>
+</svg>

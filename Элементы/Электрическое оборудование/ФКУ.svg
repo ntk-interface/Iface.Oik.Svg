@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="32"
+     height="24"
+     viewBox="0 0 8.467 6.35">
+  <g stroke-width=".265">
+    <path fill="none"
+          stroke="#000"
+          d="M.132.132h8.202v6.085H.132z"/>
+    <text style="line-height:1.25"
+          x=".493" y="290.273"
+          transform="matrix(.98358 0 0 1.0167 0 -290.65)"
+          font-weight="400"
+          font-size="1.708"
+          font-family="sans-serif"
+          letter-spacing="0"
+          word-spacing="0">
+      <tspan x=".493"
+             y="290.273"
+             font-size="3.504">ФКУ</tspan>
+    </text>
+  </g>
+</svg>

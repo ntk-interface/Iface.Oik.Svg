@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="68"
+     height="62"
+     viewBox="0 0 17.992 16.404">
+    <defs>
+        <marker orient="auto"
+                refY="0"
+                refX="0"
+                id="a"
+                overflow="visible">
+            <path d="M2.308 0l-3.46 2v-4z"
+                  fill-rule="evenodd"
+                  stroke="#000"
+                  stroke-width=".5332"/>
+        </marker>
+    </defs>
+    <g fill="none"
+       stroke="#000"
+       stroke-width=".265">
+        <path d="M17.86 11.642a4.63 4.63 0 01-4.63 4.63 4.63 4.63 0 01-4.631-4.63 4.63
+         4.63 0 014.63-4.63 4.63 4.63 0 014.63 4.63z"/>
+        <path d="M10.583 11.642a4.63 4.63 0 01-4.63 4.63 4.63 4.63 0 01-4.63-4.63 4.63
+        4.63 0 014.63-4.63 4.63 4.63 0 014.63 4.63z"/>
+        <path d="M14.552 5.82a4.63 4.63 0 01-4.63 4.631 4.63 4.63 0 01-4.63-4.63 4.63
+        4.63 0 014.63-4.63 4.63 4.63 0 014.63 4.63z"/>
+        <path d="M.126 294.715l13.103-13.59"
+              marker-end="url(#a)"
+              transform="translate(0 -280.596)"/>
+    </g>
+</svg>

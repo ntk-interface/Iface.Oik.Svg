@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="42"
+     height="32"
+     viewBox="0 0 11.113 8.467">
+    <g transform="translate(0 -288.533)"
+       fill="none"
+       stroke="#000"
+       stroke-width=".265">
+        <circle cx="5.556"
+                cy="290.915"
+                r="2.249"/>
+        <circle r="2.249"
+                cy="294.619"
+                cx="5.556"/>
+        <circle cx="2.381"
+                cy="292.767"
+                r="2.249"/>
+        <circle r="2.249"
+                cy="292.767"
+                cx="8.731"/>
+    </g>
+</svg>

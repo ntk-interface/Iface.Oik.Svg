@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="41"
+     height="73"
+     viewBox="0 0 10.848 19.315">
+    <defs>
+        <marker orient="auto"
+                refY="0"
+                refX="0"
+                id="a"
+                overflow="visible">
+            <path d="M2.308 0l-3.46 2v-4z"
+                  fill-rule="evenodd"
+                  stroke="#000"
+                  stroke-width=".5332"/>
+        </marker>
+    </defs>
+    <g transform="translate(0 -277.685)"
+       fill="none"
+       stroke="#000">
+        <circle cx="5.556"
+                cy="292.37"
+                r="4.63"
+                stroke-width=".265"/>
+        <circle r="4.63"
+                cy="284.5"
+                cx="5.556"
+                stroke-width=".265"/>
+        <path d="M9.26 283.506c-.176-1.587-.352-3.175-1.105-4.145-.752-.97-2.082-1.323-3.411-1.676"
+              transform="matrix(1.00586 0 0 1.02083 .818 -5.655)"
+              stroke-width=".261"/>
+        <path d="M.103 291.491l10.003-12.307"
+              stroke-width=".265"
+              marker-end="url(#a)"/>
+    </g>
+</svg>

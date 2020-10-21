@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="100"
+     height="100"
+     >
+
+  <title>Спидометр</title>
+  <g transform="translate(0.0,0.0)"
+     oik:oikelement="1">
+  <desc>
+    var ti = initTmAnalog(20, 3, 1, 'спидометр');
+
+    var min=200;
+    var max=240;
+    var mid=(max-min)/2+min;
+
+    setElementProperty('min', 'text', min);
+    setElementProperty('max', 'text', max);
+    setElementProperty('mid', 'text', mid);
+
+
+    function update() {
+    if (isTmAnalogUnreliable(ti)) {
+    setElementProperty('line', 'display', 'block');
+    setElementProperty('line', 'stroke', 'red');
+
+    }
+    else if (getTmAnalogValue(ti) &lt; min) {
+    setElementProperty('line', 'display', 'none');
+    setElementProperty('line', 'transform', 'rotate(0,50,50)');
+    setElementProperty('line', 'stroke', 'black');
+
+    }
+    else if (getTmAnalogValue(ti)  &gt; max) {
+    setElementProperty('line', 'display', 'none');
+    setElementProperty('line', 'transform', 'rotate(0,50,50)');
+    setElementProperty('line', 'stroke', 'black');
+
+    }
+
+    else {
+    var pr=(((getTmAnalogValue(ti)-min)*100)/(max-min))*300/100;
+    setElementProperty('line', 'display', 'block');
+    setElementProperty('line', 'transform', 'rotate('+pr+',50,50)');
+    setElementProperty('line', 'stroke', 'green');
+    }
+    }
+
+    return update;
+  </desc>
+
+  <g fill="none" stroke="#000">
+
+
+
+
+    <path d="M 25 93.3 A50 50 0 1 1 75 93.3" stroke="blue"/>
+
+    <line x1="24.5"
+          y1="93.3"
+          x2="27.5"
+          y2="88.97"
+          stroke="blue"/>
+
+    <line x1="75.5"
+          y1="93.3"
+          x2="72.5"
+          y2="88.97"
+          stroke="blue"/>
+
+    <line x1="50"
+          y1="0"
+          x2="50"
+          y2="5"
+          stroke="blue"/>
+
+    <line x1="1.7"
+          y1="37.5"
+          x2="6.53"
+          y2="38.35"
+          stroke="blue"/>
+    <line x1="98.3"
+          y1="35.5"
+          x2="93.47"
+          y2="38.35"
+          stroke="blue"/>
+
+    <line x1="19.55"
+          y1="10.35"
+          x2="22.595"
+          y2="14.315"
+          stroke="blue"/>
+
+    <line x1="80.45"
+          y1="10.35"
+          x2="77.405"
+          y2="14.315"
+          stroke="blue"/>
+
+    <line x1="96.1"
+          y1="69.15"
+          x2="91.58"
+          y2="67.235"
+          stroke="blue"/>
+
+    <line x1="3.9"
+          y1="69.15"
+          x2="8.42"
+          y2="67.235"
+          stroke="blue"/>
+
+
+
+
+    <line oik:oikid="line"
+          x1="50"
+          y1="50"
+          x2="35"
+          y2="75.981"
+          stroke="green"/>
+
+    <circle cx="50"
+            cy="50"
+            r="2"
+            stroke="blue"
+            fill="blue"
+    />
+
+    <text oik:oikid="min"
+          x="25"
+          y="85"
+          font-size="6"
+          font-family="Arial">
+      ??? </text>
+
+    <text oik:oikid="max"
+          x="65"
+          y="85"
+          font-size="6"
+          font-family="Arial">
+      ??? </text>
+
+    <text oik:oikid="mid"
+          x="45"
+          y="12"
+          font-size="6"
+          font-family="Arial">
+      ??? </text>
+
+
+  </g>
+  </g>
+</svg>
+
+

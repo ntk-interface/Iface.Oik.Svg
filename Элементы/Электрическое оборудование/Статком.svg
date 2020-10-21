@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="72"
+     height="24"
+     viewBox="0 0 19.05 6.35">
+    <g stroke-width=".265">
+        <path fill="none"
+              stroke="#000"
+              d="M.132.132h18.785v6.085H.132z"/>
+        <text style="line-height:1.25"
+              x=".854"
+              y="296.947"
+              transform="matrix(1.00627 0 0 .99376 0 -290.65)"
+              font-weight="400"
+              font-size="3.516"
+              font-family="sans-serif"
+              letter-spacing="0"
+              word-spacing="0">
+            <tspan x=".854"
+                   y="296.947">СТАТКОМ
+            </tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="70"
+     height="70">
+
+    <title>Выключатель</title>
+
+    <g oik:oikelement="1">
+        <desc>
+            var ts = initTmStatus(20, 1, 1, 'Выключатель');
+
+            function update() {
+                if (isTmStatusUnreliable(ts)) {
+                    setElementProperty('breaker', 'fill', 'white');
+                }
+                else if (isTmStatusOn(ts)) {
+                    setElementProperty('breaker', 'fill', 'green');
+                }
+                else {
+                    setElementProperty('breaker', 'fill', 'red');
+                }
+            }
+
+            return update;
+        </desc>
+
+        <path d="M19 33 A 25 27 0 0 1 54 14 L 54 0 L 62 0 L 62 20.5
+                 M62 20 A 40 30 0 0 1 54 60 L 60 70 L 29 70 L34. 60
+                 M34.5 60 A 28 25 0 0 1 19 41 L 0 41 L 0 33 L 19.5 33"
+              stroke="black"
+              fill="none"/>
+
+        <circle oik:oikid="breaker"
+                r="14"
+                cx="44"
+                cy="37"
+                fill="red"
+                stroke="#000"
+        />
+
+    </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="100"
+     height="50"
+     >
+
+  <title>Спидометр</title>
+  <g transform="translate(0.0,0.0)"
+     oik:oikelement="1">
+  <desc>
+    var ti = initTmAnalog(20, 3, 1, 'спидометр');
+
+    var min=200;//
+    var max=240;
+    var mid=(max-min)/2+min;
+
+    setElementProperty('min', 'text', min);
+    setElementProperty('max', 'text', max);
+    setElementProperty('mid', 'text', mid);
+
+
+    function update() {
+    if (isTmAnalogUnreliable(ti)) {
+    setElementProperty('line', 'display', 'block');
+    setElementProperty('line', 'stroke', 'red');
+
+    }
+    else if (getTmAnalogValue(ti) &lt; min) {
+    setElementProperty('line', 'display', 'none');
+    setElementProperty('line', 'transform', 'rotate(0,50,50)');
+    setElementProperty('line', 'stroke', 'black');
+
+    }
+    else if (getTmAnalogValue(ti)  &gt; max) {
+    setElementProperty('line', 'display', 'none');
+    setElementProperty('line', 'transform', 'rotate(0,50,50)');
+    setElementProperty('line', 'stroke', 'black');
+
+    }
+
+    else {
+    var pr=(((getTmAnalogValue(ti)-min)*100)/(max-min))*180/100;
+    setElementProperty('line', 'display', 'block');
+    setElementProperty('line', 'transform', 'rotate('+pr+',50,50)');
+    setElementProperty('line', 'stroke', 'green');
+    }
+    }
+
+    return update;
+  </desc>
+
+  <g fill="none" stroke="#000">
+
+    <path d="M 0 50 A50 50 0 0 1 100 50" stroke="blue"/>
+
+    <line x1="0"
+          y1="50"
+          x2="5"
+          y2="50"
+          stroke="blue"/>
+
+    <line x1="50"
+          y1="0"
+          x2="50"
+          y2="5"
+          stroke="blue"/>
+
+    <line x1="100"
+          y1="50"
+          x2="95"
+          y2="50"
+          stroke="blue"/>
+
+    <line oik:oikid="line"
+            x1="50"
+          y1="50"
+          x2="20"
+          y2="50"
+          stroke="green"/>
+
+    <circle cx="50"
+            cy="50"
+            r="2"
+            stroke="blue"
+            fill="blue"
+    />
+
+    <text oik:oikid="min"
+          x="8"
+          y="50"
+          font-size="6"
+          font-family="Arial">
+      ??? </text>
+
+    <text oik:oikid="max"
+          x="82"
+          y="50"
+          font-size="6"
+          font-family="Arial">
+      ??? </text>
+
+    <text oik:oikid="mid"
+          x="45"
+          y="12"
+          font-size="6"
+          font-family="Arial">
+      ??? </text>
+  </g>
+  </g>
+</svg>
+
+

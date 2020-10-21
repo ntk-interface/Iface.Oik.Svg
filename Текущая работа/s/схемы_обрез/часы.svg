@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="100"
+     height="100"
+     >
+
+  <title>clock</title>
+  <g oik:oikelement="1"
+          transform="translate(0.0,0.0)"
+  >
+
+    <desc>
+      function update() {
+      var date    = new Date();
+      var seconds = date.getSeconds();
+      var minutes = date.getMinutes();
+      var hours   = date.getHours();
+
+      setElementProperty('time', 'text', hours + " : "+ minutes + " : " + seconds);
+
+      var pr=seconds*6;
+      setElementProperty('seconds', 'transform', 'rotate('+pr+',50,50)');
+      var pr1=(minutes*6)+(pr/60); //seconds*0.1
+      setElementProperty('minutes', 'transform', 'rotate('+pr1+',50,50)');
+      var pr2=((hours*30)+(0.017*minutes*30)); //
+      setElementProperty('hours', 'transform', 'rotate('+pr2+',50,50)');
+
+      }
+
+      return update;
+    </desc>
+
+  <g fill="none" stroke="#000">
+
+
+
+    <circle cx="50"
+            cy="50"
+            r="50"
+            stroke="black"
+            fill="none"
+            stroke-width="1"
+    />
+
+    <line x1="24.5"
+          y1="93.3"
+          x2="27.5"
+          y2="88.97"
+          stroke="black"/>
+
+    <line x1="75.5"
+          y1="93.3"
+          x2="72.5"
+          y2="88.97"
+          stroke="black"/>
+
+    <line x1="50"
+          y1="0"
+          x2="50"
+          y2="5"
+          stroke="black"/>
+
+    <line x1="50"
+          y1="100"
+          x2="50"
+          y2="95"
+          stroke="black"/>
+
+    <line x1="0"
+          y1="50"
+          x2="5"
+          y2="50"
+          stroke="black"/>
+
+    <line x1="95"
+          y1="50"
+          x2="100"
+          y2="50"
+          stroke="black"/>
+
+    <line x1="75"
+          y1="6.7"
+          x2="72.5"
+          y2="11.03"
+          stroke="black"/>
+
+    <line x1="25"
+          y1="6.7"
+          x2="27.5"
+          y2="11.03"
+          stroke="black"/>
+
+    <line x1="6.7"
+          y1="25"
+          x2="11.03"
+          y2="27.5"
+          stroke="black"/>
+
+    <line x1="93.3"
+          y1="25"
+          x2="88.97"
+          y2="27.5"
+          stroke="black"/>
+
+    <line x1="93.3"
+          y1="75"
+          x2="88.97"
+          y2="72.5"
+          stroke="black"/>
+
+    <line x1="6.7"
+          y1="75"
+          x2="11.03"
+          y2="72.5"
+          stroke="black"/>
+
+
+
+    <line oik:oikid="hours"
+          x1="50"
+          y1="50"
+          x2="50"
+          y2="25"
+          stroke-width="2"
+          stroke="black"/>
+
+    <line oik:oikid="minutes"
+          x1="50"
+          y1="50"
+          x2="50"
+          y2="15"
+          stroke-width="2"
+          stroke="black"/>
+
+    <line oik:oikid="seconds"
+          x1="50"
+          y1="50"
+          x2="50"
+          y2="15"
+          stroke-width="0.5"
+          stroke="grey"/>
+
+    <circle cx="50"
+            cy="50"
+            r="2"
+            stroke="black"
+            fill="black"
+    />
+
+    <text x="88"
+          y="53"
+          font-size="8"
+          font-family="Arial">
+      3 </text>
+
+    <text x="48"
+          y="92"
+          font-size="8"
+          font-family="Arial">
+      6 </text>
+
+    <text x="8"
+          y="53"
+          font-size="8"
+          font-family="Arial">
+      9 </text>
+
+    <text x="45"
+          y="14"
+          font-size="8"
+          font-family="Arial">
+      12 </text>
+
+    <text oik:oikid="time"
+            x="30"
+          y="70"
+          font-size="8"
+          font-family="Arial">
+      ??? </text>
+
+
+
+
+  </g>
+  </g>
+</svg>
+
+
