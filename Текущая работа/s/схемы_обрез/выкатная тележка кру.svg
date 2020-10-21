@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="20"
+     height="66"
+     viewBox="0 0 5.292 17.463">
+
+    <title>Выкатная тележка</title>
+
+
+    <g transform="translate(0.0,0.0)"
+       oik:oikelement="1"
+       stroke-width=".265">
+        <desc>
+            var ts = initTmStatus(20, 1, 5, 'Выключатель');
+            var fillColor = getElementProperty('breaker', 'fill');
+
+            function update() {
+            if (isTmStatusUnreliable(ts)) {
+            <!-- недостоверно -->
+            setElementProperty('breaker', 'display', 'block');
+            setElementProperty('breaker', 'fill', white);
+            setElementProperty('breaker', 'stroke', none);
+            setElementProperty('unreliable', 'display', 'block');
+            setElementProperty('control', 'display', 'block');
+            setElementProperty('lower', 'stroke', 'none');
+            }
+            else if (isTmStatusRepair(ts)) {
+            <!-- ремонт -->
+            setElementProperty('breaker', 'display', 'none');
+            setElementProperty('breaker', 'fill', none);
+            setElementProperty('breaker', 'stroke', none);
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('control', 'display', 'none');
+            setElementProperty('lower', 'stroke', 'white');
+            }
+            else if (isTmStatusControlOn(ts)) {
+            <!-- тележка в контрольном положении и выключатель вкл -->
+            setElementProperty('breaker', 'display', 'block');
+            setElementProperty('breaker', 'fill', white);
+            setElementProperty('breaker', 'stroke', white);
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('control', 'display', 'none');
+            setElementProperty('lower', 'stroke', 'none');
+            }
+            else if (isTmStatusControlOff(ts)) {
+            <!-- тележка в контрольном положении и выключатель откл -->
+            setElementProperty('breaker', 'display', 'block');
+            setElementProperty('breaker', 'fill', none);
+            setElementProperty('breaker', 'stroke', white);
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('control', 'display', 'none');
+            setElementProperty('lower', 'stroke', 'none');
+            }
+            else if (isTmStatusControlUnreliable(ts)) {
+            <!-- тележка в контрольном положении и выключатель недостоверн -->
+            setElementProperty('breaker', 'display', 'block');
+            setElementProperty('breaker', 'fill', white);
+            setElementProperty('breaker', 'stroke', white);
+            setElementProperty('unreliable', 'display', 'block');
+            setElementProperty('control', 'display', 'none');
+            setElementProperty('lower', 'stroke', 'none');
+            }
+            else if (isTmStatusOn(ts)) {
+            setElementProperty('breaker', 'display', 'block');
+            setElementProperty('breaker', 'fill', fillColor);
+            setElementProperty('breaker', 'stroke', none);
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('control', 'display', 'block');
+            setElementProperty('lower', 'stroke', 'none');
+            }
+            else {
+            setElementProperty('breaker', 'display', 'block');
+            setElementProperty('breaker', 'fill', none);
+            setElementProperty('breaker', 'stroke', none);
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('control', 'display', 'block');
+            setElementProperty('lower', 'stroke', 'none');
+            }
+            }
+
+            return update;
+        </desc>
+
+
+        <!-- верхняя часть -->
+        <g fill="none"
+           stroke="#000">
+            <path d="M4.428 4.49L2.646 2.708.864 4.49"/>
+            <path d="M2.646.172v2.536"/>
+        </g>
+
+        <!-- нижняя часть -->
+       <g oik:oikid="lower"
+           fill="none"
+           stroke="#000">
+            <path d="M.864 13.144l1.782 1.782 1.782-1.782"/>
+            <path d="M2.646 17.462v-2.536"/>
+        </g>
+
+        /* <path oik:oikid="breaker"
+              fill="none"
+              stroke="#000"
+              d="M.132 6.303H5.16v5.027H.132z"/>
+        */
+
+
+        <!-- средняя часть -->
+        <g oik:oikid="control">
+            <g fill="none" stroke="#000">
+                <path d="M4.428 5.548L2.646 3.767.864 5.548"/>
+                <path d="M2.646 3.767v2.537"/>
+            </g>
+            <g fill="none" stroke="#000">
+                <path d="M.864 12.086l1.782 1.781 1.782-1.781"/>
+                <path d="M2.646 13.867v-2.536"/>
+            </g>
+        </g>
+
+
+        <text oik:oikid="unreliable"
+              display="none"
+              style="line-height:1.25;-inkscape-font-specification:Arial"
+              x="1.132"
+              y="299.684"
+              font-weight="400"
+              font-size="4.233"
+              font-family="Arial"
+              letter-spacing="0"
+              word-spacing="0"
+              transform="translate(.358 -289.335)">
+            <tspan x="1.132"
+                   y="299.684">?
+            </tspan>
+        </text>
+
+    </g>
+</svg>

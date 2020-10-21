@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="70"
+     height="70"
+>
+
+  <title>Фен</title>
+
+  <rect width="100%"
+        height="100%"
+        fill="white" />
+
+  <g transform="translate(0.0,0.0)"
+     oik:oikelement="1"
+  >
+    <desc>
+      var ts = initTmStatus(20, 1, 10, 'fen');
+      var fillColor = getElementProperty('lamp', 'fill');
+
+      function update() {
+      if (isTmStatusUnreliable(ts)) {
+      setElementProperty('unreliable', 'display', 'block');
+      }
+      else if (isTmStatusOn(ts)) {
+      setElementProperty('lamp', 'fill', 'green');
+      setElementProperty('unreliable', 'display', 'none');
+      }
+      else {
+      setElementProperty('lamp', 'fill', 'red');
+      setElementProperty('unreliable', 'display', 'none');
+      }
+      }
+
+      return update;
+    </desc>
+
+    <circle oik:oikid="lamp"
+            cx="42"
+            cy="42"
+            r="14"
+            stroke="orange"
+            fill="none"
+    />
+
+    <path d="M 0 45 L0 35 L18 35 A25 25 0 0 1 50 18.32 L50 0 L60 0 L60 24.7 A25 25 0 0 1 57 62
+    L 60 70 L20 70 L25 60.2  A25 25 0 0 1 17.2 45 L0 45 "
+          fill="none"
+          stroke="orange"
+          stroke-width="1"/>
+
+          <text oik:oikid="unreliable"
+          x="37.5"
+          y="47"
+          font-size="16"
+          font-family="arial"
+          fill="black"
+          stroke="black">
+      ? </text>
+
+  </g>
+</svg>

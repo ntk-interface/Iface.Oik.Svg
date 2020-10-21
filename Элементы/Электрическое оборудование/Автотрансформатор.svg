@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="36"
+     height="74"
+     viewBox="0 0 9.525 19.579">
+    <g transform="translate(0 -277.42)"
+       fill="none"
+       stroke="#000">
+        <circle cx="4.762"
+                cy="292.237"
+                r="4.63"
+                stroke-width=".265"/>
+        <circle r="4.63"
+                cy="284.467"
+                cx="4.762"
+                stroke-width=".265"/>
+        <path d="M9.26 283.506c-.176-1.587-.352-3.175-1.105-4.145-.752-.97-2.082-1.323-3.411-1.676"
+              transform="matrix(1.00586 0 0 1.02083 -.028 -5.905)"
+              stroke-width=".261"/>
+    </g>
+</svg>

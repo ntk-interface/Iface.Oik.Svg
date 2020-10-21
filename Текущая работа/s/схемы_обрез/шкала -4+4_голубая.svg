@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="30"
+     height="200"
+>
+
+    <title>Колба</title>
+
+    <g transform="translate(0.0,0.0)"
+       oik:oikelement="1">
+
+        <desc>
+            // меньше - &lt;
+            // больше - &gt;
+            // И - &amp;&amp;
+            var ti = initTmAnalog(20, 3, 1, 'колба');
+
+            var min=-4;
+            var max=4;
+            var mid=(max-min)/2+min;
+
+            setElementProperty('min', 'text', min);
+            setElementProperty('max', 'text', max);
+            setElementProperty('mid', 'text', mid);
+
+            function update() {
+            if (isTmAnalogUnreliable(ti)) {
+            setElementProperty('level', 'display', 'none');
+
+            }
+            else if (getTmAnalogValue(ti) &lt; min &amp;&amp; getTmAnalogValue(ti) > max) {
+            setElementProperty('level', 'display', 'none');
+            }
+
+            else {
+            setElementProperty('level', 'y', 200-(((getTmAnalogValue(ti)-min)*200)/(max-min)));
+            setElementProperty('level', 'display', 'block');
+
+            }
+            }
+
+            return update;
+        </desc>
+        <g stroke="#000">
+
+            <rect oik:oikid="flask"
+                  y="0"
+                  x="10"
+                  height="200"
+                  width="20"
+                  fill="none"/>
+
+            <rect oik:oikid="level"
+                  y="0"
+                  x="10"
+                  height="2"
+                  width="20"
+                  fill="turquoise"/>
+
+
+            <line x1="10"
+                  y1="100"
+                  x2="18"
+                  y2="100"
+                  stroke="black"/>
+            <line x1="10"
+                  y1="125"
+                  x2="15"
+                  y2="125"
+                  stroke="black"/>
+            <line x1="10"
+                  y1="150"
+                  x2="15"
+                  y2="150"
+                  stroke="black"/>
+            <line x1="10"
+                  y1="175"
+                  x2="15"
+                  y2="175"
+                  stroke="black"/>
+            <line x1="10"
+                  y1="200"
+                  x2="15"
+                  y2="200"
+                  stroke="black"/>
+            <line x1="10"
+                  y1="75"
+                  x2="15"
+                  y2="75"
+                  stroke="black"/>
+            <line x1="10"
+                  y1="50"
+                  x2="15"
+                  y2="50"
+                  stroke="black"/>
+            <line x1="10"
+                  y1="25"
+                  x2="15"
+                  y2="25"
+                  stroke="black"/>
+            <line x1="10"
+                  y1="0"
+                  x2="15"
+                  y2="0"
+                  stroke="black"/>
+
+
+
+
+
+
+
+
+
+        </g>
+    </g>
+</svg>

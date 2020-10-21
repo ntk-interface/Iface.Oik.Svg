@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="32"
+     height="32"
+>
+
+  <title>Насос</title>
+
+  <rect width="100%"
+        height="100%"
+        fill="grey" />
+
+  <g transform="translate(0.0,0.0)"
+     oik:oikelement="1"
+  >
+    <desc>
+      var ts = initTmStatus(20, 1, 10, 'nasos');
+      var fillColor = getElementProperty('lamp', 'fill');
+
+      function update() {
+      if (isTmStatusUnreliable(ts)) {
+      setElementProperty('lamp', 'fill', 'white');
+      setElementProperty('unreliable', 'display', 'block');
+      setElementProperty('malfunction', 'display', 'none');
+      }
+      else if (isTmStatusOn(ts)) {
+      setElementProperty('lamp', 'fill', 'yellow');
+      setElementProperty('unreliable', 'display', 'none');
+      setElementProperty('malfunction', 'display', 'none');
+      }
+      else if (isTmStatusMalfunction(ts)) {
+      setElementProperty('lamp', 'fill', 'none');
+      setElementProperty('unreliable', 'display', 'none');
+      setElementProperty('malfunction', 'display', 'block');
+      }
+      else {
+      setElementProperty('lamp', 'fill', 'none');
+      setElementProperty('unreliable', 'display', 'none');
+      setElementProperty('malfunction', 'display', 'none');
+      }
+      }
+
+      return update;
+    </desc>
+
+    <circle oik:oikid="lamp"
+            cx="16"
+            cy="16"
+            r="16"
+            stroke="yellow"
+            fill="none"
+    />
+
+          <text oik:oikid="unreliable"
+          x="11.5"
+          y="21"
+          font-size="16"
+          font-family="arial"
+          fill="black"
+          stroke="black">
+      ? </text>
+
+    <path oik:oikid="malfunction"
+          d="M.0 32 L32 0"
+          fill="none"
+          stroke="red"
+          stroke-width="1"
+          display="none"/>
+
+  </g>
+</svg>

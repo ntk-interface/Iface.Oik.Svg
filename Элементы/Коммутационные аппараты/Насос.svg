@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="32"
+     height="32">
+
+    <title>Насос</title>
+    <g oik:oikelement="1">
+        <desc>
+            var ts = initTmStatus(20, 1, 1, 'Насос');
+            var fillColor = getElementProperty('breaker', 'fill');
+
+            function update() {
+                if (isTmStatusUnreliable(ts)) {
+                    setElementProperty('breaker', 'fill', 'white');
+                    setElementProperty('unreliable', 'display', 'block');
+                    setElementProperty('malfunction', 'display', 'none');
+                }
+                else if (isTmStatusMalfunction(ts)) {
+                    setElementProperty('breaker', 'fill', 'none');
+                    setElementProperty('unreliable', 'display', 'none');
+                    setElementProperty('malfunction', 'display', 'block');
+                }
+                else if (isTmStatusOn(ts)) {
+                    setElementProperty('breaker', 'fill', fillColor);
+                    setElementProperty('unreliable', 'display', 'none');
+                    setElementProperty('malfunction', 'display', 'none');
+                }
+                else {
+                    setElementProperty('breaker', 'fill', 'none');
+                    setElementProperty('unreliable', 'display', 'none');
+                    setElementProperty('malfunction', 'display', 'none');
+                }
+            }
+
+            return update;
+        </desc>
+
+        <circle oik:oikid="breaker"
+                r="15.5"
+                cx="16"
+                cy="16"
+                fill="#000"
+                stroke="#000"
+        />
+        <!-- неисправность -->
+        <line oik:oikid="malfunction"
+              x1="0"
+              y1="32"
+              x2="32"
+              y2="0"
+              stroke="red"
+              display="none"
+              />
+        <!-- недостоверность -->
+        <text oik:oikid="unreliable"
+              x="16"
+              y="26"
+              text-anchor="middle"
+              fill="#000"
+              font-family="Arial"
+              font-size="27"
+             >
+            ?
+        </text>
+    </g>
+</svg>
+
+
+

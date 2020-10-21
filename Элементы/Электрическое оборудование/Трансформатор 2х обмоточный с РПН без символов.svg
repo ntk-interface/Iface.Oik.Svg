@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="40"
+     height="68"
+     viewBox="0 0 10.583 17.992">
+    <defs>
+        <marker orient="auto"
+                refY="0"
+                refX="0"
+                id="a"
+                overflow="visible">
+            <path d="M2.308 0l-3.46 2v-4z"
+                  fill-rule="evenodd"
+                  stroke="#000"
+                  stroke-width=".5332"/>
+        </marker>
+    </defs>
+    <g transform="translate(0 -279.008)"
+       fill="none"
+       stroke="#000"
+       stroke-width=".265">
+        <circle cx="5.802"
+                cy="292.237"
+                r="4.63"/>
+        <circle r="4.63"
+                cy="284.467"
+                cx="5.832"/>
+        <path d="M.1 291.735l9.228-12.155"
+              marker-end="url(#a)"/>
+    </g>
+</svg>

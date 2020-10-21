@@ -1,0 +1,98 @@
+<svg xmlns:oik="http://iface.ru/oik_svg"
+     xmlns="http://www.w3.org/2000/svg"
+     width="100"
+     height="60">
+
+    <title>Индикатор стрелочный</title>
+
+    <g oik:oikelement="1">
+
+        <desc>
+            var ti = initTmAnalog(20, 1, 2, 'Индикатор стрелочный');
+            var min = 10000;
+            var max = 20000;
+            var mid = (max + min) / 2;
+            setElementProperty('max', 'text', max);
+            setElementProperty('min', 'text', min);
+            setElementProperty('mid', 'text', mid);
+
+            function update() {
+                var value = getTmAnalogValue(ti);
+                var percentage = (value - min) / (max - min);
+
+                if (percentage &lt; 0) {
+                    percentage = 0;
+                }
+                if (percentage &gt; 1) {
+                    percentage = 1;
+                }
+                var grade = 180 * percentage;
+                setElementProperty('unit', 'text', getTmAnalogUnit(ti));
+                setElementProperty('pointer', 'transform', 'rotate(' + grade + ', 50, 45)');
+            }
+
+            return update;
+
+        </desc>
+
+        <path d="M0 45 A 50 40 0 0 1 100 45" stroke="black" fill="none"/>
+        <line x1="14" y1="17" x2="17" y2="20" stroke="black"/>
+        <line x1="50" y1="10" x2="50" y2="5" stroke="black"/>
+        <line x1="82" y1="20" x2="85" y2="17" stroke="black"/>
+        <line x1="0" y1="45" x2="5" y2="45" stroke="black"/>
+        <line x1="95" y1="45" x2="100" y2="45" stroke="black"/>
+
+        <line oik:oikid="pointer"
+              x1="25"
+              y1="45"
+              x2="50"
+              y2="45"
+              stroke="black"
+              stroke-width="2"/>
+        <circle r="4" cx="50" cy="45" stroke="black"/>
+
+        <text oik:oikid="min"
+              x="0"
+              y="57"
+              fill="black"
+              font-family="Arial"
+              text-anchor="start"
+              opacity=".8"
+              font-size="8">
+            ??
+        </text>
+        <text oik:oikid="max"
+              x="100"
+              y="57"
+              fill="black"
+              font-family="Arial"
+              text-anchor="end"
+              opacity=".8"
+              font-size="8">
+            ??
+        </text>
+
+        <text oik:oikid="mid"
+              x="50"
+              y="19"
+              fill="black"
+              font-family="Arial"
+              text-anchor="middle"
+              opacity=".8"
+              font-size="8">
+            ??
+        </text>
+
+        <text oik:oikid="unit"
+              fill="black"
+              x="50"
+              y="57"
+              font-family="Arial"
+              text-anchor="middle"
+              font-size="8"
+              opacity=".8">
+            ???
+        </text>
+    </g>
+</svg>
+
