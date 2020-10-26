@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="60"
+     height="100">
+
+    <title>Столбиковый индикатор</title>
+    <g oik:oikelement="1">
+        <desc>
+            var ti = initTmAnalog(20, 1, 2, 'Индикатор');
+            var min = 50;
+            var max = 100;
+            var defaultHeight = 100;
+            var mid = (max + min) / 2;
+            setElementProperty('max', 'text', max);
+            setElementProperty('min', 'text', min);
+            setElementProperty('mid', 'text', mid);
+
+            function update() {
+                var value = getTmAnalogValue(ti);
+                var percentage = (value - min) / (max - min);
+                if (percentage &lt; 0) {
+                    percentage = 0;
+                }
+                if (percentage &gt; 1) {
+                    percentage = 1;
+                }
+                var height = percentage * defaultHeight;
+                var y = defaultHeight - height;
+                setElementProperty('ind', 'height', height);
+                setElementProperty('ind', 'y', y);
+
+                if (isTmAnalogUnreliable(ti)) {
+                    setElementProperty('ind', 'fill', 'white');
+                }
+                else {
+                    setElementProperty('ind', 'fill', 'green');
+                }
+
+            }
+
+            return update;
+        </desc>
+        <rect oik:oikid="ind"
+              width="30"
+              height="20"
+              fill="green"
+              x="30"
+              y="80"/>
+
+        <rect width="30"
+              height="100"
+              fill="none"
+              stroke="black"
+              x="30"
+              y="0"
+        />
+
+        <line x1="30" y1="10" x2="35" y2="10" stroke="black" opacity=".75"/>
+        <line x1="30" y1="20" x2="35" y2="20" stroke="black" opacity=".75"/>
+        <line x1="30" y1="30" x2="35" y2="30" stroke="black" opacity=".75"/>
+        <line x1="30" y1="40" x2="35" y2="40" stroke="black" opacity=".75"/>
+        <line x1="30" y1="50" x2="40" y2="50" stroke="black" opacity=".75"/>
+        <line x1="30" y1="60" x2="35" y2="60" stroke="black" opacity=".75"/>
+        <line x1="30" y1="70" x2="35" y2="70" stroke="black" opacity=".75"/>
+        <line x1="30" y1="80" x2="35" y2="80" stroke="black" opacity=".75"/>
+        <line x1="30" y1="90" x2="35" y2="90" stroke="black" opacity=".75"/>
+
+
+        <text oik:oikid="min"
+              x="15"
+              y="99"
+              fill="black"
+              font-family="Arial"
+              text-anchor="start"
+              font-size="8">
+            ??
+        </text>
+        <text oik:oikid="max"
+              x="25"
+              y="7"
+              fill="black"
+              font-family="Arial"
+              text-anchor="end"
+              font-size="8">
+            ??
+        </text>
+
+        <text oik:oikid="mid"
+              x="20"
+              y="52"
+              fill="black"
+              font-family="Arial"
+              text-anchor="middle"
+              font-size="8">
+            ??
+        </text>
+    </g>
+</svg>

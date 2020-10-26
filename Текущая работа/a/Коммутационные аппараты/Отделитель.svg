@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="12"
+     height="16">
+
+    <title>Отделитель</title>
+
+    <g oik:oikelement="1">
+        <desc>
+            var ts = initTmStatus(20, 1, 2, 'Отделитель');
+
+            function update() {
+            if (isTmStatusUnreliable(ts)) {
+            setElementProperty('knife', 'display', 'none');
+            setElementProperty('unreliable', 'display', 'block');
+            setElementProperty('malfunction', 'display', 'none');
+            }
+            else if (isTmStatusMalfunction(ts)) {
+            setElementProperty('knife', 'display', 'none');
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('malfunction', 'display', 'block');
+            }
+            else if (isTmStatusIntermediate(ts)) {
+            setElementProperty('knife', 'display', 'block');
+            setElementProperty('knife', 'transform', 'rotate(45,6,8)');
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('malfunction', 'display', 'none');
+            }
+            else if (isTmStatusOn(ts)) {
+            setElementProperty('knife', 'display', 'block');
+            setElementProperty('knife', 'transform', 'none');
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('malfunction', 'display', 'none');
+            }
+            else {
+            setElementProperty('knife', 'display', 'block');
+            setElementProperty('knife', 'transform', 'rotate(90,6,8)');
+            setElementProperty('unreliable', 'display', 'none');
+            setElementProperty('malfunction', 'display', 'none');
+            }
+            }
+
+            return update;
+        </desc>
+        <!-- коннекторы -->
+        <line x1="0"
+              y1="0"
+              x2="12"
+              y2="0"
+              stroke="#000"/>
+        <line x1="0"
+              y1="16"
+              x2="12"
+              y2="16"
+              stroke="#000"/>
+        <!-- нож -->
+        <g oik:oikid="knife"
+           stroke="#000">
+            <line x1="6"
+                  y1="2"
+                  x2="6"
+                  y2="14"
+                  stroke="#000"/>
+            <rect x="6"
+                  y="7"
+                  width="2"
+                  height="2"
+                  stroke="#000"
+                  fill="#000"/>
+        </g>
+        <!-- недостоверность -->
+        <g oik:oikid="unreliable"
+           display="none">
+            <rect x="0"
+                  y="2"
+                  width="12"
+                  height="12"
+                  fill="white"/>
+            <text x="3"
+                  y="12"
+                  fill="#000"
+                  font-family="Arial"
+                  font-size="10">
+                ?
+            </text>
+        </g>
+        <!-- неисправность -->
+        <g oik:oikid="malfunction"
+           display="none">
+            <line
+                    x1="0.5"
+                    y1="15.5"
+                    x2="11.5"
+                    y2="0.5"
+                    stroke="red"/>
+            <rect x="9.7"
+                  y="1.8"
+                  width="2"
+                  height="2"
+                  stroke="red"
+                  transform="rotate(37)"
+                  fill="red"/>
+        </g>
+    </g>
+</svg>

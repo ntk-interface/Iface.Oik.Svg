@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="24"
+     height="24">
+
+    <title>Лампа</title>
+
+    <g transform="translate(0.5,0.5)"
+       oik:oikelement="1">
+        <desc>
+            var ts = initTmStatus(0, 1, 1, 'Лампа');
+
+            initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', 'green');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', 'red');
+            	}
+            }
+
+            return update;
+        </desc>
+        <circle oik:oikid="lamp"
+                cx="12"
+                cy="12"
+			    r="10"
+                stroke="black"/>
+    </g>
+</svg>

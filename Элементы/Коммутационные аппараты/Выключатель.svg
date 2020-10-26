@@ -41,7 +41,8 @@
               width="16"
               height="16"
               fill="#000"
-              stroke="#000"/>
+              stroke="#000"
+              />
         <!-- неисправность -->
         <line oik:oikid="malfunction"
               x1="0"
@@ -52,9 +53,8 @@
               display="none"/>
         <!-- недостоверность -->
         <text oik:oikid="unreliable"
-              x="8"
+              x="3"
               y="14"
-              text-anchor="middle"
               fill="#000"
               font-family="Arial"
               font-size="17"

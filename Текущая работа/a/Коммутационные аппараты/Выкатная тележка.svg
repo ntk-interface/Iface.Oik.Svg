@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="16"
+     height="48">
+
+    <title>Выкатная тележка</title>
+
+    <g oik:oikelement="1">
+        <desc>
+            var ts = initTmStatus(20, 1, 2, 'Выкатная тележка');
+            var ts2 = initTmStatus(1, 1, 2, 'Ремонт');
+
+            var fillColor = getElementProperty('breaker', 'fill');
+            var strokeColor = getElementProperty('fork', 'stroke');
+
+            function update() {
+                if (isTmStatusOn(ts2)) {
+                    setElementProperty('breaker', 'display', 'none');
+                    setElementProperty('fork-top', 'display', 'none');
+                    setElementProperty('unreliable', 'display', 'none');
+                    setElementProperty('fork', 'stroke', 'white');
+                }
+                else if (isTmStatusUnreliable(ts)) {
+                    setElementProperty('breaker', 'fill', 'white');
+                    setElementProperty('breaker', 'display', 'block');
+                    setElementProperty('unreliable', 'display', 'block');
+                    setElementProperty('fork-top', 'display', 'block');
+                    setElementProperty('fork', 'stroke', strokeColor);
+                }
+                else if (isTmStatusOn(ts)) {
+                    setElementProperty('breaker', 'fill', fillColor);
+                    setElementProperty('fork', 'stroke', strokeColor);
+                    setElementProperty('breaker', 'display', 'block');
+                    setElementProperty('unreliable', 'display', 'none');
+                    setElementProperty('fork-top', 'display', 'block');
+                }
+
+                else {
+                    setElementProperty('breaker', 'fill', 'none');
+                    setElementProperty('breaker', 'display', 'block');
+                    setElementProperty('unreliable', 'display', 'none');
+                    setElementProperty('fork-top', 'display', 'block');
+                    setElementProperty('fork', 'stroke', strokeColor);
+                }
+            }
+
+            return update;
+        </desc>
+        <!-- рамка -->
+        <rect oik:oikid="breaker"
+              x="0"
+              y="16"
+              width="16"
+              height="16"
+              fill="#000"
+              stroke="#000"/>
+        <!-- вилки у края -->
+        <g oik:oikid="fork"
+           stroke="#000">
+            <line x1="8.3"
+                  y1="0.3"
+                  x2="4"
+                  y2="4.3"
+                  fill="none"
+                  stroke="#000"/>
+            <line x1="7.7"
+                  y1="0.3"
+                  x2="12"
+                  y2="4.3"
+                  fill="none"
+                  stroke="#000"/>
+            <line
+                    x1="8.3"
+                    y1="47.7"
+                    x2="4"
+                    y2="43.3"
+                    fill="none"
+                    stroke="#000"/>
+            <line
+                    x1="7.7"
+                    y1="47.7"
+                    x2="12"
+                    y2="43.3"
+                    fill="none"
+                    stroke="#000"/>
+        </g>
+
+        <g oik:oikid="fork-top"
+           fill="none"
+           stroke="#000">
+            <!-- верхняя вилка -->
+            <line
+                    x1="8.3"
+                    y1="5"
+                    x2="4"
+                    y2="9"
+                    fill="none"
+                    stroke="#000"/>
+            <line
+                    x1="7.7"
+                    y1="5"
+                    x2="12"
+                    y2="9"
+                    fill="none"
+                    stroke="#000"/>
+            <line
+                    x1="8"
+                    y1="5"
+                    x2="8"
+                    y2="16"
+                    fill="none"
+                    stroke="#000"/>
+            <!-- нижняя вилка -->
+            <line
+                    x1="8"
+                    y1="32"
+                    x2="8"
+                    y2="42"
+                    fill="none"
+                    stroke="#000"/>
+            <line
+                    x1="8.3"
+                    y1="43"
+                    x2="4"
+                    y2="38.6"
+                    fill="none"
+                    stroke="#000"/>
+            <line
+                    x1="7.7"
+                    y1="43"
+                    x2="12"
+                    y2="38.6"
+                    fill="none"
+                    stroke="#000"/>
+        </g>
+        <!-- недостоверность -->
+        <g oik:oikid="unreliable"
+           display="none">
+            <rect x="1"
+                  y="17"
+                  width="14"
+                  height="14"
+                  fill="white"/>
+            <text x="3"
+                  y="30"
+
+                  fill="#000"
+                  font-family="Arial"
+                  font-size="16">
+                ?
+            </text>
+        </g>
+    </g>
+</svg>

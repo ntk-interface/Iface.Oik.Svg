@@ -3,11 +3,11 @@
      width="12"
      height="25">
 
-    <title>Короткозамыкатели</title>
+    <title>Короткозамыкатель</title>
 
     <g oik:oikelement="1">
         <desc>
-            var ts = initTmStatus(20, 1, 2, 'Короткозамыкатели');
+            var ts = initTmStatus(20, 1, 2, 'Короткозамыкатель');
 
             function update() {
             if (isTmStatusUnreliable(ts)) {
@@ -101,9 +101,8 @@
                   width="12"
                   height="12"
                   fill="white"/>
-            <text x="6"
+            <text x="3"
                   y="11.5"
-                  text-anchor="middle"
                   fill="#000"
                   font-family="Arial"
                   font-size="10">

@@ -3,11 +3,11 @@
      width="24"
      height="20">
 
-    <title>Задвижки</title>
+    <title>Задвижка</title>
 
     <g oik:oikelement="1">
         <desc>
-            var ts = initTmStatus(20, 1, 1, 'Задвижки');
+            var ts = initTmStatus(20, 1, 1, 'Задвижка');
             var fillColor = getElementProperty('triangle1', 'fill');
             var fillColor = getElementProperty('triangle2', 'fill');
 
@@ -44,15 +44,13 @@
 
         <!-- недостоверность -->
         <text oik:oikid="unreliable"
-              x="12"
+              x="9"
               y="8"
-              text-anchor="middle"
               fill="#000"
               font-family="Arial"
               font-size="10"
-              display="none"
-        >
-            ?
+              display="none">
+              ?
         </text>
     </g>
 </svg>

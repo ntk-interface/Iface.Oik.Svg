@@ -1,0 +1,2188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:oik="http://iface.ru/oik_svg"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="рисунок3 - живой.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 238.12499 158.75001"
+   height="600"
+   width="900">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:snap-global="false"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1018"
+     inkscape:window-width="2560"
+     guidetolerance="10.5"
+     objecttolerance="9.1"
+     inkscape:pagecheckerboard="true"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="g945"
+     inkscape:document-units="px"
+     inkscape:cy="296.59946"
+     inkscape:cx="563.19825"
+     inkscape:zoom="1.4142136"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#0a0a0a"
+     id="base"
+     inkscape:showpageshadow="true"
+     showborder="true">
+    <inkscape:grid
+       id="grid10"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     width="100%"
+     height="100%"
+     id="rect6"
+     x="0"
+     y="-1.3592123e-05"
+     style="fill:#333333" />
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Слой 1"
+     transform="translate(0,-26.458333)">
+    <g
+       style="stroke:#fcaf3e"
+       id="g891"
+       transform="translate(7.4754882,46.617709)">
+      <rect
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.26458299;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect14"
+         width="66.145836"
+         height="39.6875"
+         x="0"
+         y="0"
+         ry="15.875"
+         rx="15.875" />
+      <rect
+         ry="15.086386"
+         y="0.91735303"
+         x="1.0706596"
+         height="37.715965"
+         width="64.004517"
+         id="rect841"
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.81247997;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="15.086386" />
+    </g>
+    <g
+       transform="translate(6.1525715,46.617709)"
+       id="g887"
+       oik:oikelement="1">
+      <desc
+         id="desc136">
+            var ti = initTmAnalog(24, 1, 7, 'Измерение');
+			var min = 0;
+			var max = 60;
+			
+            var defaultFill = getElementProperty('rect', 'fill');
+			
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				var percentage = getTmAnalogValue(ti) / (max - min);
+				if (percentage &gt; 1) percentage = 1;
+				if (percentage &lt; 0) percentage = 0;
+				var height = 35 * percentage;
+				var y = 2.4 + 35 - height;
+				setElementProperty('rect', 'y', y);
+				setElementProperty('rect', 'height', height);
+				
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('rect', 'fill', 'white');
+				}
+				else {
+					if (percentage &gt; 0.8 &amp;&amp; !isTmAnalogUnreliable(ti)) {
+						setElementProperty('rect', 'fill', '#f44336');
+					}
+					else {
+						setElementProperty('rect', 'fill', defaultFill);
+					}
+				}
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#fcaf3e;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect865"
+         width="10.583333"
+         height="35"
+         x="17.197916"
+         y="2.4000001"
+         oik:oikid="rect" />
+      <path
+         d="M15.8749998 1.58749998C15.8749998 1.58749998 15.8749998 38.09999952 15.8749998 38.09999952C15.8749998 38.09999952 29.1041663 38.09999952 29.1041663 38.09999952C29.1041663 38.09999952 29.1041663 1.58749998 29.1041663 1.58749998C29.1041663 1.58749998 15.8749998 1.58749998 15.8749998 1.58749998M22.48958305 2.6458333C24.6882699931 2.6458333 26.458333 4.4158957777 26.458333 6.61458325C26.458333 6.61458325 26.458333 33.07291625 26.458333 33.07291625C26.458333 35.2716037223 24.6882699931 37.0416662 22.48958305 37.0416662C20.2908950485 37.0416662 18.5208331 35.2716037223 18.5208331 33.07291625C18.5208331 33.07291625 18.5208331 6.61458325 18.5208331 6.61458325C18.5208331 4.4158957777 20.2908950485 2.6458333 22.48958305 2.6458333C22.48958305 2.6458333 22.48958305 2.6458333 22.48958305 2.6458333"
+         style="stroke-dasharray:none;stroke:#808000;stroke-width:0.0;stroke-miterlimit:4;fill:#000000"
+         id="rect851" />
+      <rect
+         style="fill:none;stroke:#ffffff;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect853"
+         width="7.9375"
+         height="34.395832"
+         x="18.520834"
+         y="2.6458333"
+         ry="3.96875"
+         rx="3.96875" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 17.4625,11.1125 h 1.322917"
+         id="path871"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path873"
+         d="m 17.4625,19.84375 h 1.322917"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 17.4625,28.575 h 1.322917"
+         id="path875"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(3.4850529,45.294792)"
+       id="g901">
+      <rect
+         style="fill:#fcfc80;stroke:#d4a018;stroke-width:0.55042702;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect877"
+         width="17.176231"
+         height="6.6145835"
+         x="34.417519"
+         y="5.2916665"
+         ry="1.3229169"
+         rx="1.3229169" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778006px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299"
+         x="37.993877"
+         y="9.8805342"
+         id="text845"><tspan
+           sodipodi:role="line"
+           id="tspan843"
+           x="37.993877"
+           y="9.8805342"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299">MK15</tspan></text>
+    </g>
+    <g
+       transform="translate(7.4754882,47.967049)"
+       id="g896"
+       oik:oikelement="1">
+      <desc
+         id="desc22">
+            var ti = initTmAnalog(24, 1, 7, 'Измерение');
+			var min = 0;
+			var max = 60;
+			
+            var defaultFill = getElementProperty('percentage', 'fill');
+			
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('percentage', 'fill', 'white');
+				}
+				else {
+					setElementProperty('percentage', 'fill', defaultFill);
+				}
+				var percentage = getTmAnalogValue(ti) / (max - min);
+				if (percentage &gt; 1) percentage = 1;
+				if (percentage &lt; 0) percentage = 0;
+				setElementProperty('percentage', 'text', (percentage * 100).toFixed(0));
+            }
+
+            return update;
+        </desc>
+      <rect
+         ry="1.0689023"
+         y="15.822156"
+         x="2.5840678"
+         height="5.3445106"
+         width="11.968016"
+         id="rect879"
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.41299999;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.0689023" />
+      <text
+         xml:space="preserve"
+         style="font-size:2.82222009px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         x="3.7931731"
+         y="19.77771"
+         id="text849"><tspan
+           sodipodi:role="line"
+           id="tspan847"
+           x="3.7931731"
+           y="19.77771"
+           style="font-size:3.52777791px;stroke-width:0.26458299">%</tspan><tspan
+           sodipodi:role="line"
+           id="tspan26"
+           x="8.7931731"
+           y="19.77771"
+           style="font-size:3.52777791px;stroke-width:0.26458299"
+           oik:oikid="percentage" /></text>
+    </g>
+    <g
+       id="g909"
+       transform="translate(7.4754882,46.617709)"
+       oik:oikelement="1">
+      <desc
+         id="desc58">
+            var ts = initTmStatus(20, 1, 5);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#f44336');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#616161');
+            	}
+            }
+
+            return update;
+        </desc>
+      <circle
+         style="fill:#616161;stroke:#dcb028;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path903"
+         cx="9.9597092"
+         cy="8.6192369"
+         r="3.9999995" />
+      <ellipse
+         cy="8.6192369"
+         cx="9.9597092"
+         id="circle905"
+         style="fill:#616161;stroke:#dcb028;stroke-width:0.17657501;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="4.4117646"
+         ry="4.4170189"
+         oik:oikid="lamp" />
+    </g>
+    <g
+       transform="translate(7.4754882,68.256849)"
+       id="g915"
+       oik:oikelement="1">
+      <desc
+         id="desc29">
+            var ts = initTmStatus(20, 1, 6);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#4caf50');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#616161');
+            	}
+            }
+
+            return update;
+        </desc>
+      <circle
+         r="3.9999995"
+         cy="8.6192369"
+         cx="9.9597092"
+         id="circle911"
+         style="fill:#4caf50;stroke:#dcb028;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         oik:oikid="lamp" />
+      <ellipse
+         ry="4.4170189"
+         rx="4.4117646"
+         style="fill:none;stroke:#dcb028;stroke-width:0.17657501;stroke-miterlimit:4;stroke-dasharray:none"
+         id="ellipse913"
+         cx="9.9597092"
+         cy="8.6192369" />
+    </g>
+    <g
+       id="g927"
+       transform="translate(35.256739,45.347636)"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 3, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect921"
+         width="19.770882"
+         height="5.3445106"
+         x="2.7187009"
+         y="15.822156"
+         ry="1.0689023"
+         rx="1.0689023" />
+      <text
+         id="text925"
+         y="19.776848"
+         x="4.7481565"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           y="19.776848"
+           x="4.7481565"
+           id="tspan929"
+           sodipodi:role="line"
+           style="font-size:3.52777767px">P</tspan><tspan
+           y="19.776848"
+           x="8.7481565"
+           id="tspan929"
+           sodipodi:role="line"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+    <g
+       transform="translate(35.256739,51.962223)"
+       id="g937"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 4, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         ry="1.0689023"
+         y="15.822156"
+         x="2.7187009"
+         height="5.3445106"
+         width="19.770882"
+         id="rect931"
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.0689023" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         x="4.7481565"
+         y="19.776848"
+         id="text935"><tspan
+           y="19.776848"
+           x="4.7481565"
+           id="tspan947"
+           sodipodi:role="line"
+           style="font-size:3.52777767px">L</tspan><tspan
+           y="19.776848"
+           x="8.7481565"
+           id="tspan947"
+           sodipodi:role="line"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+    <g
+       id="g945"
+       transform="translate(35.256739,58.576806)"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 5, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect939"
+         width="19.770882"
+         height="5.3445106"
+         x="2.7187009"
+         y="15.822156"
+         ry="1.0689023"
+         rx="1.0689023" />
+      <text
+         id="text943"
+         y="19.776848"
+         x="4.7481565"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           y="19.776848"
+           x="4.7481565"
+           id="tspan949"
+           sodipodi:role="line"
+           style="font-size:3.52777767px">T</tspan><tspan
+           y="19.776848"
+           x="8.7481565"
+           id="tspan949"
+           sodipodi:role="line"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+    <g
+       id="g1066"
+       transform="translate(24.199857,21.644937)">
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 4.4412201,92.0372 v -4.157736 h 4.204985"
+         id="path1054"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1056"
+         d="M 14.966294,92.0372 V 87.879464 H 10.761309"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1058"
+         d="m 4.4412201,93.963318 v 4.157736 h 4.204985"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 14.966294,93.963318 v 4.157736 h -4.204985"
+         id="path1060"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g904"
+       style="stroke:#ffffff"
+       transform="matrix(-1,0,0,1,155.89679,-10.829105)"
+       oik:oikelement="1">
+      <desc
+         id="desc58">
+            var ts = initTmStatus(20, 1, 1);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('coil', 'stroke', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('coil', 'stroke', '#f44336');
+            	}
+				else {
+            		setElementProperty('coil', 'stroke', '#616161');
+            	}
+            }
+
+            return update;
+        </desc>
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         d="m 23.803692,120.40492 h 2.622582 m -2.622582,-7.95127 h 2.522356 m -0.0567,-0.006 c 1.50257,0.0105 1.969124,2.17649 0,2.55134 1.687365,0.34574 1.874665,2.4447 0,2.74032 1.566637,0.0238 1.973356,2.40644 0.11693,2.65681"
+         style="fill:none;stroke:#ef2929;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path1072" oik:oikid="coil" />
+      <rect
+         ry="2.5431327e-06"
+         y="111.18412"
+         x="23.786989"
+         height="10.523738"
+         width="5.3453903"
+         id="rect900"
+         style="fill:none;stroke:#ffffff;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="2.5431327e-06" />
+    </g>
+    <path
+       style="fill:#3465a4;stroke:#204a87;stroke-width:1.07009006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 24.580738,86.440872 V 172.13325"
+       id="path906"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#204a87;stroke-width:1.13216996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 24.580738,114.63781 H 43.42324"
+       id="path908"
+       inkscape:connector-curvature="0" />
+    <g
+       transform="matrix(0.57627167,0,0,0.57627167,26.310707,59.458742)"
+       style="stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g1034">
+      <path
+         style="fill:#4e9a06;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 5.2916666,99.218749 21.166666,92.604166 v 6.614583 L 5.2916666,92.604166 Z"
+         id="path1022"
+         inkscape:connector-curvature="0" />
+      <circle
+         style="fill:none;stroke:#ffffff;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1024"
+         cx="13.229166"
+         cy="91.735535"
+         r="1.924273" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 13.262576,95.882943 -0.06682,-2.271792"
+         id="path1026"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 12.339733,91.719735 c 0.311814,0.406322 0.623629,0.220822 0.935443,0.01669 0.283974,-0.276078 0.567948,-0.319188 0.851922,-0.01669"
+         id="path1028"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <g
+       id="g980"
+       transform="translate(32.598824,38.065081)"
+       oik:oikelement="1">
+      <desc
+         id="desc61">
+            var ts = initTmStatus(20, 1, 2);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#4caf50');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#f44336');
+            	}
+            }
+
+            return update;
+        </desc>
+      <path
+         d="M23.8124999646 66.1458325C23.8124999646 66.1458325 23.8124997 70.6670033389 23.8124997 70.6670033389C22.9779798001 70.302711781 22.0772328406 70.11464595 21.1666664 70.11458245C18.0235444979 70.1146777 15.3145482779 72.3266313805 14.6859250087 75.40624905C14.6859250087 75.40624905 10.5833332 75.40624905 10.5833332 75.40624905C10.5833332 75.40624905 10.5833332 78.05208235 10.5833332 78.05208235C10.5833332 78.05208235 14.6859250087 78.05208235 14.6859250087 78.05208235C15.0349702168 79.7619732868 16.0456031312 81.2646425595 17.4976396212 82.232705339C17.4976396212 82.232705339 15.8749998 84.6666656 15.8749998 84.6666656C15.8749998 84.6666656 26.458333 84.6666656 26.458333 84.6666656C26.458333 84.6666656 24.8356931788 82.232705339 24.8356931788 82.232705339C26.6758575389 81.0059700211 27.7811887958 78.9407436721 27.78124965 76.7291657C27.78124965 75.2979656764 27.3170514267 73.9053736522 26.458333 72.76041575C26.458333 72.76041575 26.458333 66.1458325 26.458333 66.1458325C26.458333 66.1458325 23.8124999646 66.1458325 23.8124999646 66.1458325"
+         style="stroke-dasharray:none;stroke:#fcaf3e;stroke-width:0.52916667;stroke-miterlimit:4;fill:none"
+         id="path951" />
+      <circle
+         style="fill:#4e9a06;stroke:#fcaf3e;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path973"
+         cx="21.166666"
+         cy="76.729164"
+         r="3.0474329"
+         oik:oikid="lamp" />
+      <circle
+         r="3.3248003"
+         cy="76.729164"
+         cx="21.166666"
+         id="circle975"
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path926"
+       d="M 24.313468,143.50298 H 43.15597"
+       style="fill:none;stroke:#204a87;stroke-width:1.13216996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       id="g936"
+       style="stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="matrix(0.57627167,0,0,0.57627167,26.043437,88.323851)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path928"
+         d="M 5.2916666,99.218749 21.166666,92.604166 v 6.614583 L 5.2916666,92.604166 Z"
+         style="fill:#4e9a06;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="1.924273"
+         cy="91.735535"
+         cx="13.229166"
+         id="circle930"
+         style="fill:none;stroke:#ffffff;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path932"
+         d="m 13.262576,95.882943 -0.06682,-2.271792"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path934"
+         d="m 12.339733,91.719735 c 0.311814,0.406322 0.623629,0.220822 0.935443,0.01669 0.283974,-0.276078 0.567948,-0.319188 0.851922,-0.01669"
+         style="fill:none;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;stroke:#204a87;stroke-width:1.13216996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 24.297256,172.03875 H 43.139758"
+       id="path938"
+       inkscape:connector-curvature="0" />
+    <g
+       transform="matrix(0.57627167,0,0,0.57627167,26.027225,116.85962)"
+       style="stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g948">
+      <path
+         style="fill:#4e9a06;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 5.2916666,99.218749 21.166666,92.604166 v 6.614583 L 5.2916666,92.604166 Z"
+         id="path940"
+         inkscape:connector-curvature="0" />
+      <circle
+         style="fill:none;stroke:#ffffff;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle942"
+         cx="13.229166"
+         cy="91.735535"
+         r="1.924273" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 13.262576,95.882943 -0.06682,-2.271792"
+         id="path944"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 12.339733,91.719735 c 0.311814,0.406322 0.623629,0.220822 0.935443,0.01669 0.283974,-0.276078 0.567948,-0.319188 0.851922,-0.01669"
+         id="path946"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <g
+       id="g924"
+       transform="translate(32.598824,95.260766)"
+       oik:oikelement="1">
+      <desc
+         id="desc76">
+            var ts = initTmStatus(20, 1, 3);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#4caf50');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#f44336');
+            	}
+            }
+
+            return update;
+        </desc>
+      <path
+         d="M23.8124999646 66.1458325C23.8124999646 66.1458325 23.8124997 70.6670033389 23.8124997 70.6670033389C22.9779798001 70.302711781 22.0772328406 70.11464595 21.1666664 70.11458245C18.0235444979 70.1146777 15.3145482779 72.3266313805 14.6859250087 75.40624905C14.6859250087 75.40624905 10.5833332 75.40624905 10.5833332 75.40624905C10.5833332 75.40624905 10.5833332 78.05208235 10.5833332 78.05208235C10.5833332 78.05208235 14.6859250087 78.05208235 14.6859250087 78.05208235C15.0349702168 79.7619732868 16.0456031312 81.2646425595 17.4976396212 82.232705339C17.4976396212 82.232705339 15.8749998 84.6666656 15.8749998 84.6666656C15.8749998 84.6666656 26.458333 84.6666656 26.458333 84.6666656C26.458333 84.6666656 24.8356931788 82.232705339 24.8356931788 82.232705339C26.6758575389 81.0059700211 27.7811887958 78.9407436721 27.78124965 76.7291657C27.78124965 75.2979656764 27.3170514267 73.9053736522 26.458333 72.76041575C26.458333 72.76041575 26.458333 66.1458325 26.458333 66.1458325C26.458333 66.1458325 23.8124999646 66.1458325 23.8124999646 66.1458325"
+         style="stroke-dasharray:none;stroke:#fcaf3e;stroke-width:0.52916667;stroke-miterlimit:4;fill:none"
+         id="path918" />
+      <circle
+         style="fill:#ef2929;stroke:#fcaf3e;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle920"
+         cx="21.166666"
+         cy="76.729164"
+         r="3.0474329"
+         oik:oikid="lamp" />
+      <circle
+         r="3.3248003"
+         cy="76.729164"
+         cx="21.166666"
+         id="circle922"
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="translate(32.598824,66.66293)"
+       id="g916"
+       oik:oikelement="1">
+      <desc
+         id="desc82">
+            var ts = initTmStatus(20, 1, 4);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#4caf50');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#f44336');
+            	}
+            }
+
+            return update;
+        </desc>
+      <path
+         id="path910"
+         style="stroke-dasharray:none;stroke:#fcaf3e;stroke-width:0.52916667;stroke-miterlimit:4;fill:none"
+         d="M23.8124999646 66.1458325C23.8124999646 66.1458325 23.8124997 70.6670033389 23.8124997 70.6670033389C22.9779798001 70.302711781 22.0772328406 70.11464595 21.1666664 70.11458245C18.0235444979 70.1146777 15.3145482779 72.3266313805 14.6859250087 75.40624905C14.6859250087 75.40624905 10.5833332 75.40624905 10.5833332 75.40624905C10.5833332 75.40624905 10.5833332 78.05208235 10.5833332 78.05208235C10.5833332 78.05208235 14.6859250087 78.05208235 14.6859250087 78.05208235C15.0349702168 79.7619732868 16.0456031312 81.2646425595 17.4976396212 82.232705339C17.4976396212 82.232705339 15.8749998 84.6666656 15.8749998 84.6666656C15.8749998 84.6666656 26.458333 84.6666656 26.458333 84.6666656C26.458333 84.6666656 24.8356931788 82.232705339 24.8356931788 82.232705339C26.6758575389 81.0059700211 27.7811887958 78.9407436721 27.78124965 76.7291657C27.78124965 75.2979656764 27.3170514267 73.9053736522 26.458333 72.76041575C26.458333 72.76041575 26.458333 66.1458325 26.458333 66.1458325C26.458333 66.1458325 23.8124999646 66.1458325 23.8124999646 66.1458325" />
+      <circle
+         r="3.0474329"
+         cy="76.729164"
+         cx="21.166666"
+         id="circle912"
+         style="fill:#4caf50;stroke:#fcaf3e;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         oik:oikid="lamp" />
+      <circle
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle914"
+         cx="21.166666"
+         cy="76.729164"
+         r="3.3248003" />
+    </g>
+    <g
+       transform="translate(24.010869,50.470907)"
+       id="g958">
+      <path
+         inkscape:connector-curvature="0"
+         id="path950"
+         d="m 4.4412201,92.0372 v -4.157736 h 4.204985"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 14.966294,92.0372 V 87.879464 H 10.761309"
+         id="path952"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 4.4412201,93.963318 v 4.157736 h 4.204985"
+         id="path954"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path956"
+         d="m 14.966294,93.963318 v 4.157736 h -4.204985"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g968"
+       transform="translate(23.932587,79.107888)">
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 4.4412201,92.0372 v -4.157736 h 4.204985"
+         id="path960"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path962"
+         d="M 14.966294,92.0372 V 87.879464 H 10.761309"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path964"
+         d="m 4.4412201,93.963318 v 4.157736 h 4.204985"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 14.966294,93.963318 v 4.157736 h -4.204985"
+         id="path966"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g1019"
+       transform="translate(1.3282895,26.572493)">
+      <rect
+         style="opacity:1;fill:none;stroke:#fcaf3e;stroke-width:0.32253;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect990"
+         width="28.571259"
+         height="20.689268"
+         x="95.941788"
+         y="18.987185"
+         ry="8.2757072"
+         rx="8.2757072" />
+      <rect
+         ry="6.8297973"
+         y="20.794571"
+         x="97.715347"
+         height="17.074495"
+         width="25.024139"
+         id="rect992"
+         style="opacity:1;fill:none;stroke:#fcaf3e;stroke-width:1.42976999;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="6.8297973" />
+      <g
+         id="g1005"
+         transform="translate(67.221783,20.73286)">
+        <rect
+           ry="1.3229169"
+           y="5.2916665"
+           x="34.417519"
+           height="6.6145835"
+           width="17.176231"
+           id="rect999"
+           style="fill:#fcfc80;stroke:#d4a018;stroke-width:0.55042702;stroke-miterlimit:4;stroke-dasharray:none"
+           rx="1.3229169" />
+        <text
+           id="text1003"
+           y="10.266126"
+           x="36.846409"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611012px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+           xml:space="preserve"><tspan
+             sodipodi:role="line"
+             id="tspan1021"
+             x="36.846409"
+             y="10.266126">RB02</tspan></text>
+      </g>
+    </g>
+    <g
+       transform="translate(1.1393015,75.520414)"
+       id="g1039">
+      <rect
+         ry="8.2757072"
+         y="18.987185"
+         x="95.941788"
+         height="20.689268"
+         width="28.571259"
+         id="rect1027"
+         style="opacity:1;fill:none;stroke:#fcaf3e;stroke-width:0.32253;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="8.2757072" />
+      <rect
+         style="opacity:1;fill:none;stroke:#fcaf3e;stroke-width:1.42976999;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1029"
+         width="25.024139"
+         height="17.074495"
+         x="97.715347"
+         y="20.794571"
+         ry="6.8297973"
+         rx="6.8297973" />
+      <g
+         transform="translate(67.221783,20.73286)"
+         id="g1037">
+        <rect
+           style="fill:#fcfc80;stroke:#d4a018;stroke-width:0.55042702;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect1031"
+           width="17.176231"
+           height="6.6145835"
+           x="34.417519"
+           y="5.2916665"
+           ry="1.3229169"
+           rx="1.3229169" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611012px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+           x="36.869919"
+           y="10.266126"
+           id="text1035"><tspan
+             sodipodi:role="line"
+             id="tspan1043"
+             x="36.869919"
+             y="10.266126"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif">RB03</tspan></text>
+      </g>
+    </g>
+    <g
+       transform="matrix(-1,0,0,1,156.27476,-60.721947)"
+       style="stroke:#ffffff"
+       id="g1073"
+       oik:oikelement="1">
+      <desc
+         id="desc58">
+            var ts = initTmStatus(20, 1, 9);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('coil', 'stroke', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('coil', 'stroke', '#f44336');
+            	}
+				else {
+            		setElementProperty('coil', 'stroke', '#616161');
+            	}
+            }
+
+            return update;
+        </desc>
+      <path
+         id="path1069"
+         style="fill:none;stroke:#ffffff;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 23.803692,120.40492 h 2.622582 m -2.622582,-7.95127 h 2.522356 m -0.0567,-0.006 c 1.50257,0.0105 1.969124,2.17649 0,2.55134 1.687365,0.34574 1.874665,2.4447 0,2.74032 1.566637,0.0238 1.973356,2.40644 0.11693,2.65681"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" oik:oikid="coil" />
+      <rect
+         style="fill:none;stroke:#ffffff;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1071"
+         width="5.3453903"
+         height="10.523738"
+         x="23.786989"
+         y="111.18412"
+         ry="2.5431327e-06"
+         rx="2.5431327e-06" />
+    </g>
+    <path
+       id="path1084"
+       style="fill:none;stroke:#3465a4;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 111.54077,115.05596 v 21.2612 m -29.983271,-0.0945 h 98.651781 m -109.678925,-4.3916 v 28.79206 H 56.122387 M 111.72975,86.896734 H 82.058625 v 49.231436 -4.10812 H 56.189205 70.341369 V 103.52769 H 56.356248 M 111.54076,66.675008 v 20.221726 h 69.54762"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccc" />
+    <path
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       id="path1025"
+       d="m 105.84282,129.99238 h 11.83385 l -0.0422,-3.95495 -3.97757,-0.0845 0.0299,-3.71378 -3.67259,-0.0361 v -3.57056 l -4.27335,-0.066 z"
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.763394;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.763394;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 106.03182,69.612659 h 11.83385 l -0.0422,3.954934 -3.97757,0.08451 0.0299,3.713772 -3.67259,0.03607 v 3.570559 l -4.27335,0.06595 z"
+       id="path1023"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <g
+       transform="translate(96.503102,-11.89993)"
+       id="g1067">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1059"
+         d="m 21.375152,100.73268 9.148312,-3.811794 v 3.811794 l -9.148312,-3.811794 z"
+         style="fill:#4e9a06;stroke:#ffffff;stroke-width:0.46101701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1061"
+         d="M 26.00197,97.970858 25.96346,95.835025"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.58884603;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path1063"
+         d="m 27.254572,97.305676 -1.319643,0.734992"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path1065"
+         d="m 24.805952,97.369628 1.202714,0.668174"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g1050"
+       transform="translate(96.503102,37.417769)">
+      <path
+         style="fill:#4e9a06;stroke:#ffffff;stroke-width:0.46101701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 21.375152,100.73268 9.148312,-3.811794 v 3.811794 l -9.148312,-3.811794 z"
+         id="path1036"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.58884603;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 26.00197,97.970858 25.96346,95.835025"
+         id="path1038"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 27.254572,97.305676 -1.319643,0.734992"
+         id="path1042"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 24.805952,97.369628 1.202714,0.668174"
+         id="path1044"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g984"
+       transform="translate(131.04486,68.282412)"
+       oik:oikelement="1">
+      <desc
+         id="desc4347">
+            var ti = initTmAnalog(21, 6, 2, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.56667602;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect978"
+         width="22.531582"
+         height="5.3445106"
+         x="2.7557616"
+         y="15.822156"
+         ry="1.0689023"
+         rx="1.0689023" />
+      <text
+         id="text982"
+         y="20.16046"
+         x="4.3343639"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611012px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan1327"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           x="4.3343639"
+           y="20.16046">T</tspan><tspan
+           sodipodi:role="line"
+           id="tspan132"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           x="8.3343639"
+           y="20.16046"
+           oik:oikid="value" /></text>
+    </g>
+    <g
+       transform="translate(131.04486,117.52682)"
+       id="g1093"
+       oik:oikelement="1">
+      <desc
+         id="desc138">
+            var ti = initTmAnalog(22, 13, 2, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         ry="1.0689023"
+         y="15.822156"
+         x="2.7187009"
+         height="5.3445106"
+         width="19.770882"
+         id="rect1087"
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.0689023" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         x="4.7481565"
+         y="19.521049"
+         id="text1091"><tspan
+           sodipodi:role="line"
+           id="tspan1089"
+           x="4.7481565"
+           y="19.521049"
+           style="font-size:4.23333311px">T</tspan><tspan
+           sodipodi:role="line"
+           id="tspan140"
+           x="8.7481565"
+           y="19.521049"
+           style="font-size:4.23333311px"
+           oik:oikid="value" /></text>
+    </g>
+    <g
+       id="g1103"
+       transform="translate(112.74435,43.254627)">
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 4.4412201,92.0372 v -4.157736 h 4.204985"
+         id="path1095"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1097"
+         d="M 14.966294,92.0372 V 87.879464 H 10.761309"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1099"
+         d="m 4.4412201,93.963318 v 4.157736 h 4.204985"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 14.966294,93.963318 v 4.157736 h -4.204985"
+         id="path1101"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(112.82263,-5.9229621)"
+       id="g1113">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1105"
+         d="m 4.4412201,92.0372 v -4.157736 h 4.204985"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 14.966294,92.0372 V 87.879464 H 10.761309"
+         id="path1107"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 4.4412201,93.963318 v 4.157736 h 4.204985"
+         id="path1109"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1111"
+         d="m 14.966294,93.963318 v 4.157736 h -4.204985"
+         style="fill:none;stroke:#cc0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       transform="translate(1.7841599,92.163843)"
+       id="g1121">
+      <rect
+         style="fill:#fcfc80;stroke:#d4a018;stroke-width:0.55042702;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1115"
+         width="17.176231"
+         height="6.6145835"
+         x="34.417519"
+         y="5.2916665"
+         ry="1.3229169"
+         rx="1.3229169" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778006px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299"
+         x="37.993877"
+         y="9.8805342"
+         id="text1119"><tspan
+           sodipodi:role="line"
+           id="tspan1117"
+           x="37.993877"
+           y="9.8805342"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299">MK10</tspan></text>
+    </g>
+    <g
+       id="g1133"
+       transform="translate(1.7841599,121.26801)">
+      <rect
+         ry="1.3229169"
+         y="5.2916665"
+         x="34.417519"
+         height="6.6145835"
+         width="17.176231"
+         id="rect1127"
+         style="fill:#fcfc80;stroke:#d4a018;stroke-width:0.55042702;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.3229169" />
+      <text
+         id="text1131"
+         y="9.8805342"
+         x="37.993877"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778006px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299"
+           y="9.8805342"
+           x="37.993877"
+           id="tspan1129"
+           sodipodi:role="line">MK11</tspan></text>
+    </g>
+    <g
+       transform="translate(1.7841599,150.37225)"
+       id="g1141">
+      <rect
+         style="fill:#fcfc80;stroke:#d4a018;stroke-width:0.55042702;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1135"
+         width="17.176231"
+         height="6.6145835"
+         x="34.417519"
+         y="5.2916665"
+         ry="1.3229169"
+         rx="1.3229169" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778006px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299"
+         x="37.993877"
+         y="9.8805342"
+         id="text1139"><tspan
+           sodipodi:role="line"
+           id="tspan1137"
+           x="37.993877"
+           y="9.8805342"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299">MK12</tspan></text>
+    </g>
+    <g
+       transform="translate(131.04486,61.867943)"
+       id="g1149"
+       oik:oikelement="1">
+      <desc
+         id="desc166">
+            var ti = initTmAnalog(21, 6, 1, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         ry="1.0689023"
+         y="15.822156"
+         x="2.7566953"
+         height="5.3445106"
+         width="22.613287"
+         id="rect1143"
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.56770301;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.0689023" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611012px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         x="4.3343639"
+         y="20.16046"
+         id="text1147"><tspan
+           sodipodi:role="line"
+           id="tspan1145"
+           x="4.3343639"
+           y="20.16046"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:sans-serif;-inkscape-font-specification:sans-serif">P</tspan><tspan
+           sodipodi:role="line"
+           id="tspan170"
+           x="8.3343639"
+           y="20.16046"
+           oik:oikid="value"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:sans-serif;-inkscape-font-specification:sans-serif" /></text>
+    </g>
+    <g
+       id="g1157"
+       transform="translate(131.31213,111.31281)"
+       oik:oikelement="1">
+      <desc
+         id="desc174">
+            var ti = initTmAnalog(22, 13, 1, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1151"
+         width="19.770882"
+         height="5.3445106"
+         x="2.7187009"
+         y="15.822156"
+         ry="1.0689023"
+         rx="1.0689023" />
+      <text
+         id="text1155"
+         y="19.521049"
+         x="4.7481565"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           y="19.521049"
+           x="4.7481565"
+           id="tspan1153"
+           sodipodi:role="line"
+           style="font-size:4.23333311px">P</tspan><tspan
+           y="19.521049"
+           x="8.7481565"
+           id="tspan178"
+           sodipodi:role="line"
+           style="font-size:4.23333311px"
+           oik:oikid="value" /></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:2.8222301px;line-height:1.25;font-family:sans-serif;stroke:#fcaf3e;stroke-width:0.26458299"
+       x="30.126581"
+       y="119.38184"
+       id="text1161"><tspan
+         sodipodi:role="line"
+         id="tspan1159"
+         x="30.126581"
+         y="119.38184"
+         style="stroke:#fcaf3e;stroke-width:0.26458299">F023</tspan></text>
+    <text
+       id="text1165"
+       y="148.23074"
+       x="29.970018"
+       style="font-size:2.8222301px;line-height:1.25;font-family:sans-serif;stroke:#fcaf3e;stroke-width:0.26458299"
+       xml:space="preserve"><tspan
+         style="stroke:#fcaf3e;stroke-width:0.26458299"
+         y="148.23074"
+         x="29.970018"
+         id="tspan1163"
+         sodipodi:role="line">F024</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.8222301px;line-height:1.25;font-family:sans-serif;stroke:#fcaf3e;stroke-width:0.26458299"
+       x="30.064512"
+       y="176.67325"
+       id="text1169"><tspan
+         sodipodi:role="line"
+         id="tspan1167"
+         x="30.064512"
+         y="176.67325"
+         style="stroke:#fcaf3e;stroke-width:0.26458299">F025</tspan></text>
+    <text
+       id="text1173"
+       y="140.95468"
+       x="119.0779"
+       style="font-size:2.8222301px;line-height:1.25;font-family:sans-serif;stroke:#fcaf3e;stroke-width:0.26458299"
+       xml:space="preserve"><tspan
+         style="stroke:#fcaf3e;stroke-width:0.26458299"
+         y="140.95468"
+         x="119.0779"
+         id="tspan1171"
+         sodipodi:role="line">F025</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.8222301px;line-height:1.25;font-family:sans-serif;stroke:#fcaf3e;stroke-width:0.26458299"
+       x="119.20007"
+       y="91.695602"
+       id="text1177"><tspan
+         sodipodi:role="line"
+         id="tspan1175"
+         x="119.20007"
+         y="91.695602"
+         style="stroke:#fcaf3e;stroke-width:0.26458299">F025</tspan></text>
+    <g
+       id="g1183"
+       style="stroke:#fcaf3e"
+       transform="translate(164.33561,116.16533)">
+      <rect
+         ry="15.875"
+         y="0"
+         x="0"
+         height="39.6875"
+         width="66.145836"
+         id="rect1179"
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.26458299;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="15.875" />
+      <rect
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.81247997;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1181"
+         width="64.004517"
+         height="37.715965"
+         x="1.0706596"
+         y="0.91735303"
+         ry="15.086386"
+         rx="15.086386" />
+    </g>
+    <g
+       id="g1197"
+       transform="translate(163.01269,116.16533)"
+       oik:oikelement="1"><desc
+   id="desc192">
+            var ti = initTmAnalog(21, 3, 1, 'Измерение');
+			var min = 0;
+			var max = 20;
+			
+            var defaultFill = getElementProperty('rect', 'fill');
+			
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				var percentage = getTmAnalogValue(ti) / -(max - min);
+				if (percentage &gt; 1) percentage = 1;
+				if (percentage &lt; 0) percentage = 0;
+				var height = 35 * percentage;
+				var y = 2.4 + 35 - height;
+				setElementProperty('rect', 'y', y);
+				setElementProperty('rect', 'height', height);
+				
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('rect', 'fill', 'white');
+				}
+				else {
+					if (percentage &gt; 0.8 &amp;&amp; !isTmAnalogUnreliable(ti)) {
+						setElementProperty('rect', 'fill', '#f44336');
+					}
+					else {
+						setElementProperty('rect', 'fill', defaultFill);
+					}
+				}
+            }
+
+            return update;
+        </desc>
+&gt;
+      <rect
+   y="2.4000001"
+   x="17.197916"
+   height="35"
+   width="10.583333"
+   id="rect1185"
+   style="fill:#fcaf3e;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+   oik:oikid="rect" />
+<path
+   id="path1187"
+   style="stroke-dasharray:none;stroke:#808000;stroke-width:0.0;stroke-miterlimit:4;fill:#000000"
+   d="M15.8749998 1.58749998C15.8749998 1.58749998 15.8749998 38.09999952 15.8749998 38.09999952C15.8749998 38.09999952 29.1041663 38.09999952 29.1041663 38.09999952C29.1041663 38.09999952 29.1041663 1.58749998 29.1041663 1.58749998C29.1041663 1.58749998 15.8749998 1.58749998 15.8749998 1.58749998M22.48958305 2.6458333C24.6882699931 2.6458333 26.458333 4.4158957777 26.458333 6.61458325C26.458333 6.61458325 26.458333 33.07291625 26.458333 33.07291625C26.458333 35.2716037223 24.6882699931 37.0416662 22.48958305 37.0416662C20.2908950485 37.0416662 18.5208331 35.2716037223 18.5208331 33.07291625C18.5208331 33.07291625 18.5208331 6.61458325 18.5208331 6.61458325C18.5208331 4.4158957777 20.2908950485 2.6458333 22.48958305 2.6458333C22.48958305 2.6458333 22.48958305 2.6458333 22.48958305 2.6458333" />
+<rect
+   ry="3.96875"
+   y="2.6458333"
+   x="18.520834"
+   height="34.395832"
+   width="7.9375"
+   id="rect1189"
+   style="fill:none;stroke:#ffffff;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none"
+   rx="3.96875" />
+<path
+   inkscape:connector-curvature="0"
+   id="path1191"
+   d="m 17.4625,11.1125 h 1.322917"
+   style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+<path
+   style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   d="m 17.4625,19.84375 h 1.322917"
+   id="path1193"
+   inkscape:connector-curvature="0" />
+<path
+   inkscape:connector-curvature="0"
+   id="path1195"
+   d="m 17.4625,28.575 h 1.322917"
+   style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</g>
+    <g
+       id="g1205"
+       transform="translate(160.34517,114.84241)">
+      <rect
+         ry="1.3229169"
+         y="5.2916665"
+         x="34.417519"
+         height="6.6145835"
+         width="17.176231"
+         id="rect1199"
+         style="fill:#fcfc80;stroke:#d4a018;stroke-width:0.55042702;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.3229169" />
+      <text
+         id="text1203"
+         y="9.8805342"
+         x="37.993877"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778006px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299"
+           y="9.8805342"
+           x="37.993877"
+           id="tspan1201"
+           sodipodi:role="line">MK21</tspan></text>
+    </g>
+    <g
+       id="g1213"
+       transform="translate(164.33561,117.51467)"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(21, 3, 1, 'Измерение');
+			var min = 0;
+			var max = 20;
+			
+            var defaultFill = getElementProperty('percentage', 'fill');
+			
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('percentage', 'fill', 'white');
+				}
+				else {
+					setElementProperty('percentage', 'fill', defaultFill);
+				}
+				var percentage = getTmAnalogValue(ti) / -(max - min);
+				if (percentage &gt; 1) percentage = 1;
+				if (percentage &lt; 0) percentage = 0;
+				setElementProperty('percentage', 'text', (percentage * 100).toFixed(0));
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.41299999;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1207"
+         width="11.968016"
+         height="5.3445106"
+         x="2.5840678"
+         y="15.822156"
+         ry="1.0689023"
+         rx="1.0689023" />
+      <text
+         id="text1211"
+         y="19.77771"
+         x="3.7931731"
+         style="font-size:2.82222009px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           style="font-size:3.52777791px;stroke-width:0.26458299"
+           y="19.77771"
+           x="3.7931731"
+           id="tspan1209"
+           sodipodi:role="line">%</tspan><tspan
+           style="font-size:3.52777791px;stroke-width:0.26458299"
+           y="19.77771"
+           x="8.7931731"
+           id="tspan209"
+           sodipodi:role="line"
+           oik:oikid="percentage" /></text>
+    </g>
+    <g
+       id="g1219"
+       transform="translate(164.33561,116.16533)"
+       oik:oikelement="1">
+      <desc
+         id="desc210">
+            var ts = initTmStatus(20, 1, 9);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#f44336');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#616161');
+            	}
+            }
+
+            return update;
+        </desc>
+      <circle
+         r="3.9999995"
+         cy="8.6192369"
+         cx="9.9597092"
+         id="circle1215"
+         style="fill:#555753;stroke:#dcb028;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         oik:oikid="lamp" />
+      <ellipse
+         ry="4.4170189"
+         rx="4.4117646"
+         style="fill:none;stroke:#dcb028;stroke-width:0.17657501;stroke-miterlimit:4;stroke-dasharray:none"
+         id="ellipse1217"
+         cx="9.9597092"
+         cy="8.6192369" />
+    </g>
+    <g
+       id="g1225"
+       transform="translate(164.33561,137.80451)"
+       oik:oikelement="1">
+      <desc
+         id="desc215">
+            var ts = initTmStatus(20, 1, 5);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#4caf50');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#616161');
+            	}
+            }
+
+            return update;
+        </desc>
+      <circle
+         style="fill:#4e9a06;stroke:#dcb028;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle1221"
+         cx="9.9597092"
+         cy="8.6192369"
+         r="3.9999995"
+         oik:oikid="lamp" />
+      <ellipse
+         cy="8.6192369"
+         cx="9.9597092"
+         id="ellipse1223"
+         style="fill:none;stroke:#dcb028;stroke-width:0.17657501;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="4.4117646"
+         ry="4.4170189" />
+    </g>
+    <g
+       transform="translate(192.11686,114.89526)"
+       id="g1233"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 3, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         ry="1.0689023"
+         y="15.822156"
+         x="2.7187009"
+         height="5.3445106"
+         width="19.770882"
+         id="rect1227"
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.0689023" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         x="4.7481565"
+         y="19.776848"
+         id="text1231"><tspan
+           sodipodi:role="line"
+           id="tspan1229"
+           x="4.7481565"
+           y="19.776848"
+           style="font-size:3.52777767px">P</tspan><tspan
+           sodipodi:role="line"
+           id="tspan1229"
+           x="8.7481565"
+           y="19.776848"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+    <g
+       id="g1241"
+       transform="translate(192.11686,121.50984)"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 4, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1235"
+         width="19.770882"
+         height="5.3445106"
+         x="2.7187009"
+         y="15.822156"
+         ry="1.0689023"
+         rx="1.0689023" />
+      <text
+         id="text1239"
+         y="19.776848"
+         x="4.7481565"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan1237"
+           x="4.7481565"
+           y="19.776848"
+           style="font-size:3.52777767px">L</tspan><tspan
+           sodipodi:role="line"
+           id="tspan1237"
+           x="8.7481565"
+           y="19.776848"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+    <g
+       transform="translate(192.11686,128.12443)"
+       id="g1249"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 5, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         ry="1.0689023"
+         y="15.822156"
+         x="2.7187009"
+         height="5.3445106"
+         width="19.770882"
+         id="rect1243"
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.0689023" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         x="4.7481565"
+         y="19.776848"
+         id="text1247"><tspan
+           sodipodi:role="line"
+           id="tspan1245"
+           x="4.7481565"
+           y="19.776848"
+           style="font-size:3.52777767px">T</tspan><tspan
+           sodipodi:role="line"
+           id="tspan1245"
+           x="8.7481565"
+           y="19.776848"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+    <g
+       style="stroke:#fcaf3e"
+       id="g1257"
+       transform="translate(164.33561,67.028426)">
+      <rect
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.26458299;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1253"
+         width="66.145836"
+         height="39.6875"
+         x="0"
+         y="0"
+         ry="15.875"
+         rx="15.875" />
+      <rect
+         ry="15.086386"
+         y="0.91735303"
+         x="1.0706596"
+         height="37.715965"
+         width="64.004517"
+         id="rect1255"
+         style="fill:none;stroke:#fcaf3e;stroke-width:0.81247997;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="15.086386" />
+    </g>
+    <g
+       transform="translate(163.01269,67.028426)"
+       id="g1271"
+       oik:oikelement="1">
+      <desc
+         id="desc236">
+            var ti = initTmAnalog(24, 1, 6, 'Измерение');
+			var min = 0;
+			var max = 60;
+			
+            var defaultFill = getElementProperty('rect', 'fill');
+			
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				var percentage = getTmAnalogValue(ti) / (max - min);
+				if (percentage &gt; 1) percentage = 1;
+				if (percentage &lt; 0) percentage = 0;
+				var height = 35 * percentage;
+				var y = 2.4 + 35 - height;
+				setElementProperty('rect', 'y', y);
+				setElementProperty('rect', 'height', height);
+				
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('rect', 'fill', 'white');
+				}
+				else {
+					if (percentage &gt; 0.8 &amp;&amp; !isTmAnalogUnreliable(ti)) {
+						setElementProperty('rect', 'fill', '#f44336');
+					}
+					else {
+						setElementProperty('rect', 'fill', defaultFill);
+					}
+				}
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#fcaf3e;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1259"
+         width="10.583333"
+         height="35"
+         x="17.197916"
+         y="2.4000001"
+         oik:oikid="rect" />
+      <path
+         d="M15.8749998 1.58749998C15.8749998 1.58749998 15.8749998 38.09999952 15.8749998 38.09999952C15.8749998 38.09999952 29.1041663 38.09999952 29.1041663 38.09999952C29.1041663 38.09999952 29.1041663 1.58749998 29.1041663 1.58749998C29.1041663 1.58749998 15.8749998 1.58749998 15.8749998 1.58749998M22.48958305 2.6458333C24.6882699931 2.6458333 26.458333 4.4158957777 26.458333 6.61458325C26.458333 6.61458325 26.458333 33.07291625 26.458333 33.07291625C26.458333 35.2716037223 24.6882699931 37.0416662 22.48958305 37.0416662C20.2908950485 37.0416662 18.5208331 35.2716037223 18.5208331 33.07291625C18.5208331 33.07291625 18.5208331 6.61458325 18.5208331 6.61458325C18.5208331 4.4158957777 20.2908950485 2.6458333 22.48958305 2.6458333C22.48958305 2.6458333 22.48958305 2.6458333 22.48958305 2.6458333"
+         style="stroke-dasharray:none;stroke:#808000;stroke-width:0.0;stroke-miterlimit:4;fill:#000000"
+         id="path1261" />
+      <rect
+         style="fill:none;stroke:#ffffff;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1263"
+         width="7.9375"
+         height="34.395832"
+         x="18.520834"
+         y="2.6458333"
+         ry="3.96875"
+         rx="3.96875" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 17.4625,11.1125 h 1.322917"
+         id="path1265"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1267"
+         d="m 17.4625,19.84375 h 1.322917"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.28072301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 17.4625,28.575 h 1.322917"
+         id="path1269"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(160.34517,65.705509)"
+       id="g1279">
+      <rect
+         style="fill:#fcfc80;stroke:#d4a018;stroke-width:0.55042702;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1273"
+         width="17.176231"
+         height="6.6145835"
+         x="34.417519"
+         y="5.2916665"
+         ry="1.3229169"
+         rx="1.3229169" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778006px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299"
+         x="37.993877"
+         y="9.8805342"
+         id="text1277"><tspan
+           sodipodi:role="line"
+           id="tspan1275"
+           x="37.993877"
+           y="9.8805342"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458299">MK20</tspan></text>
+    </g>
+    <g
+       transform="translate(164.33561,68.377765)"
+       id="g1287"
+       oik:oikelement="1">
+      <desc
+         id="desc249">
+            var ti = initTmAnalog(24, 1, 6, 'Измерение');
+			var min = 0;
+			var max = 60;
+			
+            var defaultFill = getElementProperty('percentage', 'fill');
+			
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('percentage', 'fill', 'white');
+				}
+				else {
+					setElementProperty('percentage', 'fill', defaultFill);
+				}
+				var percentage = getTmAnalogValue(ti) / (max - min);
+				if (percentage &gt; 1) percentage = 1;
+				if (percentage &lt; 0) percentage = 0;
+				setElementProperty('percentage', 'text', (percentage * 100).toFixed(0));
+            }
+
+            return update;
+        </desc>
+      <rect
+         ry="1.0689023"
+         y="15.822156"
+         x="2.5840678"
+         height="5.3445106"
+         width="11.968016"
+         id="rect1281"
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.41299999;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.0689023" />
+      <text
+         xml:space="preserve"
+         style="font-size:2.82222009px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         x="3.7931731"
+         y="19.77771"
+         id="text1285"><tspan
+           sodipodi:role="line"
+           id="tspan1283"
+           x="3.7931731"
+           y="19.77771"
+           style="font-size:3.52777791px;stroke-width:0.26458299">%</tspan><tspan
+           sodipodi:role="line"
+           id="tspan253"
+           x="8.7931731"
+           y="19.77771"
+           style="font-size:3.52777791px;stroke-width:0.26458299"
+           oik:oikid="percentage" /></text>
+    </g>
+    <g
+       id="g1293"
+       transform="translate(164.33561,67.028426)"
+       oik:oikelement="1">
+      <desc
+         id="desc250">
+            var ts = initTmStatus(20, 1, 7);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#f44336');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#616161');
+            	}
+            }
+
+            return update;
+        </desc>
+      <circle
+         style="fill:#ef2929;stroke:#dcb028;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle1289"
+         cx="9.9597092"
+         cy="8.6192369"
+         r="3.9999995"
+         oik:oikid="lamp" />
+      <ellipse
+         cy="8.6192369"
+         cx="9.9597092"
+         id="ellipse1291"
+         style="fill:none;stroke:#dcb028;stroke-width:0.17657501;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="4.4117646"
+         ry="4.4170189" />
+    </g>
+    <g
+       transform="translate(164.33561,88.667563)"
+       id="g1299"
+       oik:oikelement="1">
+      <desc
+         id="desc255">
+            var ts = initTmStatus(20, 1, 8);
+			
+			initTmStatusDefaultCommands(ts);
+
+            function update() {
+            	if (isTmStatusUnreliable(ts)) {
+            		setElementProperty('lamp', 'fill', 'white');
+            	}
+            	else if (isTmStatusOn(ts)) {
+            		setElementProperty('lamp', 'fill', '#4caf50');
+            	}
+				else {
+            		setElementProperty('lamp', 'fill', '#616161');
+            	}
+            }
+
+            return update;
+        </desc>
+      <circle
+         r="3.9999995"
+         cy="8.6192369"
+         cx="9.9597092"
+         id="circle1295"
+         style="fill:#4e9a06;stroke:#dcb028;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none" />
+      <ellipse
+         ry="4.4170189"
+         rx="4.4117646"
+         style="fill:#555753;stroke:#dcb028;stroke-width:0.17657501;stroke-miterlimit:4;stroke-dasharray:none"
+         id="ellipse1297"
+         cx="9.9597092"
+         cy="8.6192369"
+         oik:oikid="lamp" />
+    </g>
+    <g
+       id="g1307"
+       transform="translate(192.11686,65.758353)"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 3, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1301"
+         width="19.770882"
+         height="5.3445106"
+         x="2.7187009"
+         y="15.822156"
+         ry="1.0689023"
+         rx="1.0689023" />
+      <text
+         id="text1305"
+         y="19.776848"
+         x="4.7481565"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           y="19.776848"
+           x="4.7481565"
+           id="tspan1303"
+           sodipodi:role="line"
+           style="font-size:3.52777767px">P</tspan><tspan
+           y="19.776848"
+           x="8.7481565"
+           id="tspan1303"
+           sodipodi:role="line"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+    <g
+       transform="translate(192.11686,72.372937)"
+       id="g1315"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 4, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         ry="1.0689023"
+         y="15.822156"
+         x="2.7187009"
+         height="5.3445106"
+         width="19.770882"
+         id="rect1309"
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         rx="1.0689023" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         x="4.7481565"
+         y="19.776848"
+         id="text1313"><tspan
+           y="19.776848"
+           x="4.7481565"
+           id="tspan1311"
+           sodipodi:role="line"
+           style="font-size:3.52777767px">L</tspan><tspan
+           y="19.776848"
+           x="8.7481565"
+           id="tspan1311"
+           sodipodi:role="line"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+    <g
+       id="g1323"
+       transform="translate(192.11686,78.98752)"
+       oik:oikelement="1">
+      <desc
+         id="desc205">
+            var ti = initTmAnalog(20, 1, 5, 'Измерение');
+            var defaultFill = getElementProperty('value', 'fill');
+            initTmAnalogDefaultCommands(ti);
+
+            function update() {
+				if (isTmAnalogUnreliable(ti)) {
+					setElementProperty('value', 'fill', 'white');
+				}
+				else {
+					setElementProperty('value', 'fill', defaultFill);
+				}
+				setElementProperty('value', 'text', getTmAnalogValueString(ti));
+            }
+
+            return update;
+        </desc>
+      <rect
+         style="fill:#ffffff;stroke:#d4a018;stroke-width:0.53082597;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1317"
+         width="19.770882"
+         height="5.3445106"
+         x="2.7187009"
+         y="15.822156"
+         ry="1.0689023"
+         rx="1.0689023" />
+      <text
+         id="text1321"
+         y="19.776848"
+         x="4.7481565"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;stroke-width:0.26458299"
+         xml:space="preserve"><tspan
+           y="19.776848"
+           x="4.7481565"
+           id="tspan1319"
+           sodipodi:role="line"
+           style="font-size:3.52777767px">T</tspan><tspan
+           y="19.776848"
+           x="8.7481565"
+           id="tspan1319"
+           sodipodi:role="line"
+           style="font-size:3.52777767px" oik:oikid="value"></tspan></text>
+    </g>
+  </g>
+</svg>

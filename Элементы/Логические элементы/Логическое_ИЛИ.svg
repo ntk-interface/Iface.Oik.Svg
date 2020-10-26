@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:oik="http://iface.ru/oik_svg"
+     width="30"
+     height="100">
+    <g oik:oikelement="1">
+        <desc>
+            var inputs = [
+                initVariable('B1'),
+                initVariable('B2'),
+                initVariable('B3')
+            ];
+            var output = initVariable('M1');
+
+            function update() {
+                var isOk          = false;
+                var isUnreliable  = true;
+                var isManuallySet = true;
+                for (var i = 0; i &lt; inputs.length; i++)
+                {
+                    if (isVariableOn(inputs[i]))
+                    {
+                        isOk = true;
+                        if (!isVariableManuallySet(inputs[i])) {
+                            isManuallySet = false;
+                        }
+                        if (!isVariableUnreliable(inputs[i])) {
+                            isUnreliable = false;
+                        }
+                    }
+                }
+                if (isUnreliable) {
+                    isOk = false;
+                }
+                var fillColor = (isOk)
+                        ? (isManuallySet) ? '#ffeb3b' : '#4caf50'
+                        : '#f44336';
+                setElementProperty('rect', 'fill', fillColor);
+                setVariable(output, isOk);
+                setVariableUnreliable(output, isUnreliable);
+                setVariableManuallySet(output, isManuallySet);
+            }
+
+            return update;
+        </desc>
+        <rect oik:oikid="rect"
+              x="0"
+              y="0"
+              width="30"
+              height="100"
+              stroke="black"
+              fill="none"
+              fill-opacity=".2"/>
+        <text x="15"
+              y="56"
+              text-anchor="middle"
+              font-size="16">
+            1
+        </text>
+    </g>
+</svg>
