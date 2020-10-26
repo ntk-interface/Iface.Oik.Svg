@@ -1,0 +1,195 @@
+<svg xmlns:oik="http://iface.ru/oik_svg"
+     xmlns="http://www.w3.org/2000/svg"
+     width="100"
+     height="100">
+
+    <title>Часы</title>
+
+    <g oik:oikelement="1">
+
+        <desc>
+            function update() {
+                var date = new Date();
+                var seconds = date.getSeconds();
+                var minutes = date.getMinutes();
+                var hour = date.getHours();
+
+                var gradeHours = 360 * (hour / 12) + ( 30 * minutes / 60);
+                var gradeSeconds = 360 * (seconds / 60);
+                var gradeMinutes = 360 * (minutes / 60);
+
+                setElementProperty('pointerMin', 'transform', 'rotate(' + gradeMinutes + ', 50, 50)');
+                setElementProperty('pointerSec', 'transform', 'rotate(' + gradeSeconds + ', 50, 50)');
+                setElementProperty('pointerHours', 'transform', 'rotate(' + gradeHours + ', 50, 50)');
+            }
+
+            return update;
+
+        </desc>
+
+        <circle r="50"
+                cx="50"
+                cy="50"
+                fill="none"
+                stroke="#000"
+                opacity=".5"
+        />
+
+        <line x1="50"
+              y1="0"
+              x2="50"
+              y2="5"
+              stroke="black"
+              opacity=".5"/>
+
+        <line x1="100"
+              y1="50"
+              x2="95"
+              y2="50"
+              stroke="black"
+              opacity=".5"/>
+
+        <line x1="50"
+              y1="100"
+              x2="50"
+              y2="95"
+              stroke="black"
+              opacity=".5"/>
+
+        <line x1="0"
+              y1="50"
+              x2="5"
+              y2="50"
+              stroke="black"
+              opacity=".5"/>
+
+        <line x1="6.7"
+              y1="25"
+              x2="11"
+              y2="27.5"
+              stroke="black"
+              opacity=".5"
+        />
+
+        <line x1="25"
+              y1="6.7"
+              x2="27.5"
+              y2="11"
+              stroke="black"
+              opacity=".5"
+        />
+
+        <line x1="75"
+              y1="6.7"
+              x2="72.5"
+              y2="11"
+              stroke="black"
+              opacity=".5"
+        />
+
+        <line x1="93.3"
+              y1="25"
+              x2="89"
+              y2="27.5"
+              stroke="black"
+              opacity=".5"
+        />
+
+        <line x1="93.3"
+              y1="75"
+              x2="89"
+              y2="72.5"
+              stroke="black"
+              opacity=".5"
+        />
+
+        <line x1="75"
+              y1="93.3"
+              x2="72.5"
+              y2="89"
+              stroke="black"
+              opacity=".5"
+        />
+
+        <line x1="25"
+              y1="93.3"
+              x2="27.5"
+              y2="89"
+              stroke="black"
+              opacity=".5"
+        />
+
+        <line x1="6.7"
+              y1="75"
+              x2="11"
+              y2="72.5"
+              stroke="black"
+              opacity=".5"
+        />
+
+        <line oik:oikid="pointerHours"
+              x1="50"
+              y1="30"
+              x2="50"
+              y2="50"
+              stroke="black"
+              stroke-width="2.5"/>
+
+        <line oik:oikid="pointerMin"
+              x1="50"
+              y1="20"
+              x2="50"
+              y2="50"
+              stroke="black"
+              stroke-width="2"/>
+
+        <line oik:oikid="pointerSec"
+              x1="50"
+              y1="15"
+              x2="50"
+              y2="50"
+              stroke="black"
+              stroke-width="1.5"
+              opacity=".5"/>
+
+        <circle r="4"
+                cx="50"
+                cy="50"
+                stroke="black"/>
+
+        <text x="88"
+              y="52.5"
+              fill="black"
+              opacity=".5"
+              font-family="Arial"
+              font-size="10">
+            3
+        </text>
+
+        <text x="44"
+              y="12"
+              fill="black"
+              opacity=".5"
+              font-family="Arial"
+              font-size="10">
+            12
+        </text>
+
+        <text fill="black"
+              x="47"
+              y="93"
+              font-family="Arial"
+              font-size="10"
+              opacity=".5">
+            6
+        </text>
+        <text fill="black"
+              x="6"
+              y="52.5"
+              font-family="Arial"
+              font-size="10"
+              opacity=".5">
+            9
+        </text>
+    </g>
+</svg>
